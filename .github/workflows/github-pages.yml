@@ -2,7 +2,7 @@ name: Publicar CLAMA no GitHub Pages
 
 on:
   push:
-    branches: [master, main]
+    branches: [master]
   workflow_dispatch:
 
 permissions:

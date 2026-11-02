@@ -62,7 +62,7 @@ Consulta em 02/11/2026. Dados podem sofrer revisão; mantenha as referências at
 
 ## GitHub Pages
 
-O workflow .github/workflows/github-pages.yml publica o Angular em pushes para master ou main. O .NET continua disponível localmente; não é executado pelo GitHub Pages.
+O workflow .github/workflows/github-pages.yml publica o Angular a cada push para master. O .NET continua disponível localmente; não é executado pelo GitHub Pages.
 
 1. Envie as alterações ao repositório zelipe11/ProjetoSiteModa.
 2. No GitHub, abra Settings → Pages → Build and deployment → Source e selecione GitHub Actions.
