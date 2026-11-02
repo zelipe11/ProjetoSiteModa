@@ -91,6 +91,13 @@
                   "with": "src/environments/environment.pages.ts"
                 }
               ]
+            },
+            "cloudflare": {
+              "baseHref": "/",
+              "outputPath": {
+                "base": "dist/cloudflare",
+                "browser": ""
+              }
             }
           },
           "defaultConfiguration": "production"

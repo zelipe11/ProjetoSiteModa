@@ -82,3 +82,9 @@ npm run build:pages -- --base-href /ProjetoSiteModa/
 ```
 
 Saída: ProjetoSiteModa.Client/dist/github-pages. Use caminhos relativos para futuras imagens (images/arquivo.jpg), sem barra inicial, para respeitar o subdiretório do Pages.
+
+## Cloudflare Pages
+
+Para publicar com o endereço gratuito desejado clamamoda.pages.dev, siga [o guia de configuração](docs/CLOUDFLARE-PAGES.md). O nome depende de disponibilidade. A integração Git deve ser conectada no painel Cloudflare uma vez; depois publica a cada push na master.
+
+Build: `npm run build:cloudflare` em ProjetoSiteModa.Client. Saída: dist/cloudflare.
