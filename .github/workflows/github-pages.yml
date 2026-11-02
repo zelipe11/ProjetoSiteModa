@@ -1,0 +1,53 @@
+name: Publicar CLAMA no GitHub Pages
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: ProjetoSiteModa.Client/package-lock.json
+      - name: Configurar Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Instalar dependências
+        working-directory: ProjetoSiteModa.Client
+        run: npm ci --no-audit --no-fund
+      - name: Compilar site estático
+        working-directory: ProjetoSiteModa.Client
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: npm run build:pages -- --base-href "${BASE_PATH}/"
+      - name: Enviar artefato
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ProjetoSiteModa.Client/dist/github-pages
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4

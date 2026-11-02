@@ -19,6 +19,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Angular", "Angular", "{8647
 			ProjetoSiteModa.Client\src\app\home.ts = ProjetoSiteModa.Client\src\app\home.ts
 		ProjetoSiteModa.Client\src\app\look-page.ts = ProjetoSiteModa.Client\src\app\look-page.ts
 		ProjetoSiteModa.Client\src\app\look.ts = ProjetoSiteModa.Client\src\app\look.ts
+		ProjetoSiteModa.Client\src\app\collection.ts = ProjetoSiteModa.Client\src\app\collection.ts
+		ProjetoSiteModa.Client\src\app\pages.ts = ProjetoSiteModa.Client\src\app\pages.ts
+		ProjetoSiteModa.Client\src\app\collection.html = ProjetoSiteModa.Client\src\app\collection.html
+		ProjetoSiteModa.Client\src\app\manifesto.html = ProjetoSiteModa.Client\src\app\manifesto.html
+		ProjetoSiteModa.Client\src\app\historia.html = ProjetoSiteModa.Client\src\app\historia.html
+		ProjetoSiteModa.Client\src\app\realidade.html = ProjetoSiteModa.Client\src\app\realidade.html
+		ProjetoSiteModa.Client\src\app\editorial.html = ProjetoSiteModa.Client\src\app\editorial.html
+		ProjetoSiteModa.Client\src\app\vozes.html = ProjetoSiteModa.Client\src\app\vozes.html
+		ProjetoSiteModa.Client\src\app\contato.html = ProjetoSiteModa.Client\src\app\contato.html
 	EndProjectSection
 EndProject
 Global
@@ -36,5 +45,3 @@ Global
 		{C5809BA6-972C-481A-BE79-2149B6A4BF22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
-
-

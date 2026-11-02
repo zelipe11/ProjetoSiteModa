@@ -19,4 +19,7 @@
     </ItemGroup>
   </Target>
 
+  <ItemGroup>
+    <Content Include="../ProjetoSiteModa.Client/public/data/looks.json" Link="Data/looks.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
 </Project>

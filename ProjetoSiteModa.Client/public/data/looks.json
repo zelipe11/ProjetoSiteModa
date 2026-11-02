@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "slug": "silencio",
+    "nome": "Silêncio",
+    "frase": "Antes da palavra, o que permanece?",
+    "conceito": "O início de uma trajetória que torna visível aquilo que foi silenciado.",
+    "simbolismo": "O silêncio imposto e o direito de existir.",
+    "cor": "#b7b1aa"
+  },
+  {
+    "id": 2,
+    "slug": "ferida",
+    "nome": "Ferida",
+    "frase": "Há marcas que o tempo não apaga.",
+    "conceito": "A memória da dor como ponto de partida para a expressão, sem reduzir uma mulher às marcas que carrega.",
+    "simbolismo": "A memória e o reconhecimento da dor.",
+    "cor": "#71303c"
+  },
+  {
+    "id": 3,
+    "slug": "ruptura",
+    "nome": "Ruptura",
+    "frase": "Romper também é um começo.",
+    "conceito": "O instante em que a narrativa imposta é interrompida e abre espaço para a própria história.",
+    "simbolismo": "A quebra do ciclo e a possibilidade de mudança.",
+    "cor": "#3b3838"
+  },
+  {
+    "id": 4,
+    "slug": "resistencia",
+    "nome": "Resistência",
+    "frase": "Permanecer é um gesto de força.",
+    "conceito": "A presença do corpo como manifesto e a força que se constrói também em coletivo.",
+    "simbolismo": "A permanência, o amparo e a força coletiva.",
+    "cor": "#552631"
+  },
+  {
+    "id": 5,
+    "slug": "florescer",
+    "nome": "Florescer",
+    "frase": "Reconstruir no próprio tempo.",
+    "conceito": "A reconstrução como um percurso singular: existir para além da dor, com liberdade para recomeçar.",
+    "simbolismo": "O cuidado, a autonomia e o recomeço.",
+    "cor": "#c5b9ad"
+  },
+  {
+    "id": 6,
+    "slug": "voz",
+    "nome": "Voz",
+    "frase": "Nossa história, por nós mesmas.",
+    "conceito": "A expressão que ocupa espaço e faz da moda uma linguagem para ser vista e ouvida.",
+    "simbolismo": "O direito à expressão e ao protagonismo.",
+    "cor": "#842c40"
+  }
+]

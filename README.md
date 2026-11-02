@@ -13,7 +13,8 @@ O build compila Angular para a pasta gerada ProjetoSiteModa.Server/wwwroot. Não
 
 ## Conteúdo
 
-- Página inicial: coleção, manifesto, história, dados, editorial, vozes e contato.
+- Página inicial com apresentação da CLAMA e acesso à coleção.
+- Telas independentes: /colecao, /manifesto, /historia, /realidade, /editorial, /vozes e /contato.
 - Páginas próprias para Silêncio, Ferida, Ruptura, Resistência, Florescer e Voz.
 - API GET /api/looks, GET /api/looks/{slug} e GET /api/health.
 - Os conceitos dos looks são propostas editoriais. Materiais, técnicas e construção aguardam a ficha técnica real.
@@ -24,9 +25,9 @@ O build compila Angular para a pasta gerada ProjetoSiteModa.Server/wwwroot. Não
 
 Coloque os arquivos em ProjetoSiteModa.Client/public/images. A URL pública será /images/nome-do-arquivo.jpg.
 
-- Hero, história e editorial: ProjetoSiteModa.Client/src/app/app.html.
+- Hero: ProjetoSiteModa.Client/src/app/app.html. As demais páginas usam collection.html, manifesto.html, historia.html, realidade.html, editorial.html, vozes.html e contato.html em src/app.
 - Fotos da página de cada look: ProjetoSiteModa.Client/src/app/look-page.ts. Use o slug para compor os nomes, por exemplo /images/silencio-frente.jpg e /images/silencio-costas.jpg.
-- Dados e conceitos dos looks: ProjetoSiteModa.Server/Program.cs.
+- Dados e conceitos dos looks: ProjetoSiteModa.Client/public/data/looks.json (compartilhado com a API .NET).
 - Estilos globais e responsivos: ProjetoSiteModa.Client/src/app/app.scss.
 
 Substitua os espaços .image-space por imagens com descrição alternativa adequada. O hero pode receber background-image ou vídeo sem áudio e com opção de pausar. Recompile após alterações.
@@ -57,3 +58,27 @@ Ligue 180 (orientação e denúncias, gratuito, 24h) e 190 (emergência): Minist
 https://www.gov.br/mulheres/pt-br/ligue180
 
 Consulta em 02/11/2026. Dados podem sofrer revisão; mantenha as referências atualizadas.
+
+
+## GitHub Pages
+
+O workflow .github/workflows/github-pages.yml publica o Angular em pushes para master ou main. O .NET continua disponível localmente; não é executado pelo GitHub Pages.
+
+1. Envie as alterações ao repositório zelipe11/ProjetoSiteModa.
+2. No GitHub, abra Settings → Pages → Build and deployment → Source e selecione GitHub Actions.
+3. Na aba Actions, execute Publicar CLAMA no GitHub Pages ou envie um novo commit à branch principal.
+4. O endereço definitivo aparece no resultado do deploy. Para esse repositório, o endereço esperado é https://zelipe11.github.io/ProjetoSiteModa/.
+
+A configuração `pages` usa rotas com #, por exemplo /ProjetoSiteModa/#/colecao/silencio, para permitir recarregar e abrir links diretos sem erro 404. O workflow obtém o caminho base do GitHub, incluindo suporte ao domínio personalizado configurado em Pages.
+
+Os dados da coleção, tanto no Pages quanto na API .NET, vêm de ProjetoSiteModa.Client/public/data/looks.json. Edite esse arquivo para alterar os looks. Os dados de produção são públicos.
+
+Para gerar localmente:
+
+```powershell
+cd ProjetoSiteModa.Client
+npm ci
+npm run build:pages -- --base-href /ProjetoSiteModa/
+```
+
+Saída: ProjetoSiteModa.Client/dist/github-pages. Use caminhos relativos para futuras imagens (images/arquivo.jpg), sem barra inicial, para respeitar o subdiretório do Pages.

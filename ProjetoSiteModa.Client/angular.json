@@ -79,6 +79,18 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "pages": {
+              "outputPath": {
+                "base": "dist/github-pages",
+                "browser": ""
+              },
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.pages.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
