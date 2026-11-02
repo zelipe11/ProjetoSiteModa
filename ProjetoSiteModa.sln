@@ -1,0 +1,40 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoSiteModa.Server", "ProjetoSiteModa.Server\ProjetoSiteModa.Server.csproj", "{C5809BA6-972C-481A-BE79-2149B6A4BF22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Angular", "Angular", "{8647FD21-AE46-41F8-B634-552353B7722E}"
+	ProjectSection(SolutionItems) = preProject
+		ProjetoSiteModa.Client\angular.json = ProjetoSiteModa.Client\angular.json
+		ProjetoSiteModa.Client\package.json = ProjetoSiteModa.Client\package.json
+		ProjetoSiteModa.Client\src\app\app.ts = ProjetoSiteModa.Client\src\app\app.ts
+		ProjetoSiteModa.Client\src\app\app.html = ProjetoSiteModa.Client\src\app\app.html
+		ProjetoSiteModa.Client\src\app\app.scss = ProjetoSiteModa.Client\src\app\app.scss
+		ProjetoSiteModa.Client\src\app\app.config.ts = ProjetoSiteModa.Client\src\app\app.config.ts
+		ProjetoSiteModa.Client\src\app\app.routes.ts = ProjetoSiteModa.Client\src\app\app.routes.ts
+		ProjetoSiteModa.Client\src\styles.scss = ProjetoSiteModa.Client\src\styles.scss
+		README.md = README.md
+			ProjetoSiteModa.Client\src\app\home.ts = ProjetoSiteModa.Client\src\app\home.ts
+		ProjetoSiteModa.Client\src\app\look-page.ts = ProjetoSiteModa.Client\src\app\look-page.ts
+		ProjetoSiteModa.Client\src\app\look.ts = ProjetoSiteModa.Client\src\app\look.ts
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5809BA6-972C-481A-BE79-2149B6A4BF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5809BA6-972C-481A-BE79-2149B6A4BF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5809BA6-972C-481A-BE79-2149B6A4BF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5809BA6-972C-481A-BE79-2149B6A4BF22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
+
+
