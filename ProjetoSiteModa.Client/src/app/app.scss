@@ -58,3 +58,6 @@ footer .marca .wordmark{width:190px}
 .spaces-interior{margin:35px 0 25px}
 .brand-spaces>.text-link{margin-top:30px}
 @media(max-width:650px){.marca .wordmark{width:150px}.marca .brand-tagline{font-size:7px;letter-spacing:1px}.hero h1{width:100%;margin:30px auto 15px}.identity-pair{grid-template-columns:1fr;gap:30px}.identity-note{grid-template-columns:1fr;gap:15px;margin-top:45px}.history-origin .identity-frame{aspect-ratio:423/268}footer .marca .wordmark{width:145px}}
+
+/* Fotografias individuais: proporção original, sem ampliar recortes das pranchas. */
+.identity-photo{display:block;width:100%;height:auto;filter:saturate(.08) sepia(.15)}
