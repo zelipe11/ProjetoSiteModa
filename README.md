@@ -88,3 +88,9 @@ Saída: ProjetoSiteModa.Client/dist/github-pages. Use caminhos relativos para fu
 Para publicar com o endereço gratuito desejado clamamoda.pages.dev, siga [o guia de configuração](docs/CLOUDFLARE-PAGES.md). O nome depende de disponibilidade. A integração Git deve ser conectada no painel Cloudflare uma vez; depois publica a cada push na master.
 
 Build: `npm run build:cloudflare` em ProjetoSiteModa.Client. Saída: dist/cloudflare.
+
+## Identidade visual
+
+As quatro pranchas fornecidas estão em ProjetoSiteModa.Client/public/images/identity. Os arquivos originais foram preservados. O componente brand-mark.ts mostra o logotipo no cabeçalho, na abertura e no rodapé; historia.html apresenta os esboços, embalagens, etiquetas e estudos de ambientação.
+
+Os enquadramentos e a neutralização do vermelho são feitos por CSS em app.scss. Os estudos de espaço são apresentados como conceitos, sem indicar uma loja física existente. Para substituir as pranchas por arquivos finais individuais, atualize os enquadramentos .wordmark e .identity-frame.
