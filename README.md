@@ -96,3 +96,5 @@ As quatro pranchas fornecidas estão em ProjetoSiteModa.Client/public/images/ide
 Os enquadramentos e a neutralização do vermelho são feitos por CSS em app.scss. Os estudos de espaço são apresentados como conceitos, sem indicar uma loja física existente. Para substituir as pranchas por arquivos finais individuais, atualize os enquadramentos .identity-frame. O logotipo SVG tem fundo transparente e pode ser ampliado sem pixelização. A referência atual de maior resolução está em images/identity/logotipo-referencia.jpg.
 
 As imagens individuais sacola.jpg, caixa.jpg, tags.jpg e etiqueta.jpg substituem os recortes das pranchas na seção de materiais da marca. São exibidas na proporção original e nas cores originais, sem filtro de cor.
+
+Os ambientes usam fachada.jpg, exposicao.jpg e acolhimento.jpg, também na proporção e nas cores originais, sem filtro. Permanecem identificados como estudos de ambientação.
