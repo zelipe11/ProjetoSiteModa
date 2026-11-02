@@ -21,3 +21,17 @@ main{min-height:calc(100svh - 340px)}
 
 @media(max-width:650px){nav.aberto{grid-template-columns:1fr;gap:4px}nav a{font-size:16px}.marca span{font-size:9px}}
 
+
+/* Mantém a aparência do botão no toque, inclusive no Safari mobile. */
+.menu-toggle,
+.menu-toggle:hover,
+.menu-toggle:active,
+.menu-toggle:focus {
+  color: var(--ink);
+  -webkit-text-fill-color: var(--ink);
+  background-color: transparent;
+  border-color: var(--line);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
