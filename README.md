@@ -111,4 +111,4 @@ A galeria look-gallery.ts é compartilhada pela coleção e pelos detalhes. Alte
 
 Para adicionar outras peças, preencha imagens em public/data/looks.json com src, alt e legenda. Selecionar uma miniatura encerra a troca automática daquela galeria enquanto ela estiver aberta, mantendo a imagem escolhida. Não há botões de pausar ou reproduzir. A API .NET compartilha esses dados com o frontend.
 
-As duas galerias também possuem setas de anterior/próxima sobre a imagem. Aparecem no hover e no foco de teclado; em telas de toque ficam visíveis. Clicar em uma seta pausa a troca automática e percorre as imagens em ciclo, sem abrir os detalhes por engano.
+As duas galerias também possuem setas de anterior/próxima sobre a imagem. Aparecem no hover e no foco de teclado, com controles menores na coleção; ficam ocultas em telas de até 768px e em dispositivos de toque. Clicar em uma seta pausa a troca automática e percorre as imagens em ciclo, sem abrir os detalhes por engano.
