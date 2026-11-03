@@ -110,3 +110,5 @@ O primeiro vestido é Dor (/colecao/dor); o link antigo /colecao/silencio redire
 A galeria look-gallery.ts é compartilhada pela coleção e pelos detalhes. Alterna a cada 5 segundos, com miniaturas de Frente/Costas apenas nos detalhes. A coleção exibe somente a imagem principal, com troca automática. Pausa enquanto há foco ou interação, quando a aba está oculta e inicia pausada para quem prefere movimento reduzido.
 
 Para adicionar outras peças, preencha imagens em public/data/looks.json com src, alt e legenda. Selecionar uma miniatura encerra a troca automática daquela galeria enquanto ela estiver aberta, mantendo a imagem escolhida. Não há botões de pausar ou reproduzir. A API .NET compartilha esses dados com o frontend.
+
+As duas galerias também possuem setas de anterior/próxima sobre a imagem. Aparecem no hover e no foco de teclado; em telas de toque ficam visíveis. Clicar em uma seta pausa a troca automática e percorre as imagens em ciclo, sem abrir os detalhes por engano.

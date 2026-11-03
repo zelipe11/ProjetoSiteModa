@@ -12,6 +12,10 @@ import { Look } from './look';
       </div>
     }
     @if (linkDetalhes) {<a class="gallery-detail-link" [routerLink]="['/colecao',look.slug]" [attr.aria-label]="'Ver detalhes do vestido ' + look.nome"></a>}
+    @if ((look.imagens?.length ?? 0) > 1) {
+      <button type="button" class="gallery-arrow gallery-arrow-prev" [attr.aria-label]="'Imagem anterior de ' + look.nome" (click)="mover(-1)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 5-7 7 7 7" /></svg></button>
+      <button type="button" class="gallery-arrow gallery-arrow-next" [attr.aria-label]="'Próxima imagem de ' + look.nome" (click)="mover(1)"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 5 7 7-7 7" /></svg></button>
+    }
     <span class="gallery-counter">{{indice() + 1}} / {{look.imagens?.length}}</span>
   </div>
   @if (!linkDetalhes) {
@@ -42,6 +46,10 @@ export class LookGallery implements OnChanges, OnDestroy {
  tabId(i:number){return 'look-' + this.look.id + (this.linkDetalhes ? '-card' : '-detail') + '-tab-' + i;}
  panelId(i:number){return this.tabId(i) + '-panel';}
  selecionar(i:number){this.indice.set(i);this.pausado.set(true);}
+ mover(delta:number){
+  const count=this.look.imagens?.length ?? 0;
+  if(count > 1) this.selecionar((this.indice()+delta+count)%count);
+ }
  teclado(event:KeyboardEvent,i:number){
   const count=this.look.imagens?.length ?? 0;
   if(!count || !['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key)) return;
