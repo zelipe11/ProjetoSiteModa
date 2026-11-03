@@ -3,7 +3,7 @@ import { Component, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 @Component({selector:'app-root', imports:[RouterOutlet, RouterLink, RouterLinkActive, BrandMark], template: `
 <button class="skip" type="button" (click)="conteudo.focus()">Pular para o conteúdo</button>
-<header><a class="marca" routerLink="/" (click)="menu.set(false)" aria-label="CLAMA, início"><clama-brand-mark /><span class="brand-tagline">MODA · MEMÓRIA · RESISTÊNCIA</span></a>
+<header><a class="marca" routerLink="/" (click)="menu.set(false)" aria-label="CLAMA, início"><clama-brand-mark /><span class="brand-tagline"><span>MODA</span><span aria-hidden="true">·</span><span>MEMÓRIA</span><span aria-hidden="true">·</span><span>RESISTÊNCIA</span></span></a>
 <button class="menu-toggle" type="button" (click)="menu.set(!menu())" [attr.aria-expanded]="menu()" [attr.aria-label]="menu() ? 'Fechar menu' : 'Abrir menu'" aria-controls="navegacao"><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></button>
 <nav id="navegacao" [class.aberto]="menu()" aria-label="Navegação principal">
 @for(item of links; track item.id){<a [routerLink]="['/',item.id]" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="menu.set(false)">{{item.nome}}</a>}

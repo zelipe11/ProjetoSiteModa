@@ -120,3 +120,7 @@ clama-look-image svg{display:block;width:100%;height:100%;overflow:hidden}
 .menu-toggle{width:48px;height:44px;padding:0;line-height:0}
 .menu-icon{display:inline-flex;flex-direction:column;gap:5px;width:22px;vertical-align:middle}
 .menu-icon>span{display:block;width:100%;height:1.5px;background:currentColor;border-radius:1px}
+
+header .marca .brand-tagline{display:flex;justify-content:space-between;align-items:center;width:176px;padding-inline:2%;line-height:1.4;letter-spacing:1px}
+header .marca .brand-tagline>span{display:inline;margin:0;font:inherit;letter-spacing:inherit}
+@media(max-width:650px){header .marca .brand-tagline{width:150px;font-size:7px;letter-spacing:.65px}}
