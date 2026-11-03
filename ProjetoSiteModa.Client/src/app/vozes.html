@@ -10,8 +10,8 @@
    <textarea id="voz" name="texto" minlength="3" maxlength="1000" required rows="6" [disabled]="enviando()" [value]="escrita()" (input)="alterarTexto($any($event.target).value)" aria-describedby="voz-contagem voz-privacidade" placeholder="Comece no seu tempo…"></textarea>
    <div class="writing-actions"><span id="voz-contagem">{{escrita().length}} / 1000</span><button type="button" (click)="limpar()" [disabled]="!escrita() || enviando()">Limpar rascunho</button></div>
    <div class="voice-trap" aria-hidden="true"><label for="voz-website">Website</label><input id="voz-website" name="website" tabindex="-1" autocomplete="off" [value]="website()" (input)="website.set($any($event.target).value)"></div>
-   <label class="voice-consent" for="voz-consentimento"><input id="voz-consentimento" type="checkbox" required [disabled]="enviando()" [checked]="consentimento()" (change)="consentimento.set($any($event.target).checked)"><span id="voz-privacidade">Quero enviar este texto para armazenamento privado e leitura pela equipe CLAMA.</span></label>
-   <button class="voice-submit" type="submit" [disabled]="enviando() || escrita().trim().length < 3 || !consentimento()">{{enviando() ? 'Enviando…' : 'Enviar mensagem'}}</button>
+   <p class="voice-privacy-notice" id="voz-privacidade">Todas as mensagens enviadas são privadas e somente a equipe CLAMA terá acesso a essas informações. Seu texto não será publicado no site.</p>
+   <button class="voice-submit" type="submit" [disabled]="enviando() || escrita().trim().length < 3">{{enviando() ? 'Enviando…' : 'Enviar mensagem'}}</button>
    @if(sucesso()){<p class="voice-feedback" role="status">{{sucesso()}}</p>}
    @if(erro()){<p class="voice-feedback voice-error" role="alert">{{erro()}}</p>}
   </form>

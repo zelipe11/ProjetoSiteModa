@@ -44,9 +44,8 @@ export async function onRequest({ request, env }) {
     payload = JSON.parse(body);
   } catch { return response(400, 'Não foi possível ler a mensagem.'); }
   if (!payload || typeof payload !== 'object' || Array.isArray(payload)) return response(400, 'Envio inválido.');
-  const { id, texto, consentimento, website } = payload;
+  const { id, texto, website } = payload;
   if (typeof id !== 'string' || !UUID.test(id)) return response(400, 'Identificador de envio inválido.');
-  if (consentimento !== true) return response(400, 'Confirme que deseja enviar o texto para a equipe CLAMA.');
   if (website) return response(400, 'Envio inválido.');
   if (typeof texto !== 'string' || texto.trim().length < 3 || texto.trim().length > 1000) {
     return response(400, 'Escreva entre 3 e 1.000 caracteres.');

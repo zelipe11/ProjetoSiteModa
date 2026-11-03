@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { onRequest } from '../functions/api/vozes.js';
 
 const id = 'd61467c6-e663-4a5b-8ae5-cd0d9b904e2c';
-const payload = {id,texto:'Uma mensagem de resistência.',consentimento:true,website:''};
+const payload = {id,texto:'Uma mensagem de resistência.',website:''};
 function request(body = payload, options = {}) {
  return new Request('https://clamamoda.pages.dev/api/vozes', {
   method:'POST',headers:{origin:'https://clamamoda.pages.dev','content-type':'application/json',...options.headers},
@@ -37,8 +37,8 @@ test('rejeita origem externa',async()=>{
  const db=database();const result=await onRequest({request:request(payload,{headers:{origin:'https://outro.example'}}),env:{VOZES_DB:db}});
  assert.equal(result.status,403);assert.equal(db.calls.length,0);
 });
-test('exige consentimento explícito, mensagem válida e identificador UUID',async()=>{
- for(const invalid of [{...payload,consentimento:false},{...payload,consentimento:'true'},{...payload,texto:'  '},{...payload,texto:'a'.repeat(1001)},{...payload,id:'inválido'},{...payload,website:'https://spam.example'}]){
+test('exige mensagem válida e identificador UUID',async()=>{
+ for(const invalid of [{...payload,texto:'  '},{...payload,texto:'a'.repeat(1001)},{...payload,id:'inválido'},{...payload,website:'https://spam.example'}]){
   const db=database();const result=await onRequest({request:request(invalid),env:{VOZES_DB:db}});
   assert.equal(result.status,400);assert.equal(db.calls.length,0);
  }

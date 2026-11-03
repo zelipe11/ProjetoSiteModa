@@ -37,7 +37,7 @@ Não conecte o banco de produção aos deploys de preview; use outro banco se qu
 
 ## 4. Conferir e ler
 
-No site publicado, abra Sua voz, escreva uma mensagem de teste, marque o consentimento e clique em Enviar mensagem. A confirmação aparece apenas depois de o banco aceitar o envio.
+No site publicado, abra Sua voz, escreva uma mensagem de teste e clique em Enviar mensagem. A confirmação aparece apenas depois de o banco aceitar o envio.
 
 Para ler as mensagens, use sua conta Cloudflare: Storage & databases → D1 → clama-vozes → Console:
 
@@ -51,7 +51,7 @@ O site não possui consulta, listagem nem área pública de relatos. O endereço
 
 Texto, data de envio em UTC e identificador aleatório do envio para evitar duplicatas em tentativas repetidas. O formulário não pede nome, e-mail ou telefone e não grava o rascunho no navegador. O código da aplicação não salva IP nem registra o texto nos logs. A Cloudflare pode manter logs operacionais próprios da plataforma.
 
-A mensagem é enviada somente após o consentimento marcado. Em caso de erro, o rascunho permanece na tela. Antes de configurar o banco, o envio retorna indisponível, sem confirmar um armazenamento que não ocorreu.
+O aviso de privacidade é exibido acima do botão. A mensagem é enviada somente ao clicar em Enviar mensagem. Em caso de erro, o rascunho permanece na tela. Antes de configurar o banco, o envio retorna indisponível, sem confirmar um armazenamento que não ocorreu.
 
 ## Desenvolvimento local
 
