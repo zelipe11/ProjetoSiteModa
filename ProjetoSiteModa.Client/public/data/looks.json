@@ -9,16 +9,14 @@
     "cor": "#b7b1aa",
     "imagens": [
       {
-        "src": "images/looks/dor-frente-costas.jpg",
-        "alt": "Primeiro vestido, Dor: vista de frente",
-        "legenda": "Frente",
-        "enquadramento": "esquerda"
+        "src": "images/looks/dor-frente.png",
+        "alt": "Vestido Dor, vista de frente, isolada em fundo branco",
+        "legenda": "Frente"
       },
       {
-        "src": "images/looks/dor-frente-costas.jpg",
-        "alt": "Primeiro vestido, Dor: vista de costas",
-        "legenda": "Costas",
-        "enquadramento": "direita"
+        "src": "images/looks/dor-costas.png",
+        "alt": "Vestido Dor, vista de costas, isolada em fundo branco",
+        "legenda": "Costas"
       }
     ]
   },

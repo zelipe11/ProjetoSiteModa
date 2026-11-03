@@ -105,8 +105,8 @@ A rota /sobre-nos apresenta o texto da equipe e o espaço reservado para os inte
 
 ## Galeria dos vestidos
 
-O primeiro vestido é Dor (/colecao/dor); o link antigo /colecao/silencio redireciona para ele. A imagem original está em public/images/looks/dor-frente-costas.jpg. Frente e costas são apresentadas em enquadramentos separados, preservando o arquivo fornecido.
+O primeiro vestido é Dor (/colecao/dor); o link antigo /colecao/silencio redireciona para ele. A imagem original está em public/images/looks/dor-frente-costas.jpg. As versões de apresentação dor-frente.png e dor-costas.png foram separadas com edição assistida para remover a sobreposição das saias. Veja docs/DOR-IMAGENS.md.
 
-A galeria look-gallery.ts é compartilhada pela coleção e pelos detalhes. Alterna a cada 5 segundos, com botões Frente/Costas e Pausar/Reproduzir. Pausa enquanto há foco ou interação, quando a aba está oculta e inicia pausada para quem prefere movimento reduzido.
+A galeria look-gallery.ts é compartilhada pela coleção e pelos detalhes. Alterna a cada 5 segundos, com abas Frente/Costas e Pausar/Reproduzir. Pausa enquanto há foco ou interação, quando a aba está oculta e inicia pausada para quem prefere movimento reduzido.
 
-Para adicionar outras peças, preencha imagens em public/data/looks.json com src, alt e legenda. Imagens individuais podem omitir enquadramento; a API .NET compartilha esses dados com o frontend.
+Para adicionar outras peças, preencha imagens em public/data/looks.json com src, alt e legenda. As abas ficam acima da imagem. Selecionar uma aba pausa a troca automática para manter a vista escolhida; Reproduzir permite retomá-la. A API .NET compartilha esses dados com o frontend.
