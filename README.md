@@ -102,3 +102,11 @@ Os ambientes usam fachada.jpg, exposicao.jpg e acolhimento.jpg, também na propo
 ## Sobre Nós
 
 A rota /sobre-nos apresenta o texto da equipe e o espaço reservado para os integrantes. Conteúdo em ProjetoSiteModa.Client/src/app/sobre-nos.html; nomes e fotografias serão incluídos quando fornecidos.
+
+## Galeria dos vestidos
+
+O primeiro vestido é Dor (/colecao/dor); o link antigo /colecao/silencio redireciona para ele. A imagem original está em public/images/looks/dor-frente-costas.jpg. Frente e costas são apresentadas em enquadramentos separados, preservando o arquivo fornecido.
+
+A galeria look-gallery.ts é compartilhada pela coleção e pelos detalhes. Alterna a cada 5 segundos, com botões Frente/Costas e Pausar/Reproduzir. Pausa enquanto há foco ou interação, quando a aba está oculta e inicia pausada para quem prefere movimento reduzido.
+
+Para adicionar outras peças, preencha imagens em public/data/looks.json com src, alt e legenda. Imagens individuais podem omitir enquadramento; a API .NET compartilha esses dados com o frontend.

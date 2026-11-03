@@ -1,12 +1,26 @@
 [
   {
     "id": 1,
-    "slug": "silencio",
-    "nome": "Silêncio",
-    "frase": "Antes da palavra, o que permanece?",
-    "conceito": "O início de uma trajetória que torna visível aquilo que foi silenciado.",
-    "simbolismo": "O silêncio imposto e o direito de existir.",
-    "cor": "#b7b1aa"
+    "slug": "dor",
+    "nome": "Dor",
+    "frase": "A dor que se torna expressão.",
+    "conceito": "O primeiro vestido da coleção transforma a dor em uma presença que pede para ser vista e ouvida.",
+    "simbolismo": "A memória da dor e o direito de torná-la visível.",
+    "cor": "#b7b1aa",
+    "imagens": [
+      {
+        "src": "images/looks/dor-frente-costas.jpg",
+        "alt": "Primeiro vestido, Dor: vista de frente",
+        "legenda": "Frente",
+        "enquadramento": "esquerda"
+      },
+      {
+        "src": "images/looks/dor-frente-costas.jpg",
+        "alt": "Primeiro vestido, Dor: vista de costas",
+        "legenda": "Costas",
+        "enquadramento": "direita"
+      }
+    ]
   },
   {
     "id": 2,

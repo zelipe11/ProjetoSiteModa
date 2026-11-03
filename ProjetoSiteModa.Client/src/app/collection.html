@@ -1,7 +1,7 @@
 <section id="colecao" class="section collection">
  <div class="section-top"><p class="eyebrow">01 / A COLEÇÃO</p><span>SEIS LOOKS. UMA TRAJETÓRIA.</span></div>
- <div class="section-heading"><h1 class="page-title">O corpo como<br><em>manifesto.</em></h1><p>Do silêncio à voz, uma coleção sobre memória, resistência e reconstrução. Conheça cada etapa.</p></div>
+ <div class="section-heading"><h1 class="page-title">O corpo como<br><em>manifesto.</em></h1><p>Da dor à voz, uma coleção sobre memória, resistência e reconstrução. Conheça cada etapa.</p></div>
  @if(loading()){<p role="status">Carregando a coleção…</p>}
  @if(error()){<p role="alert">Não foi possível carregar os looks.</p><button class="outline-link dark" (click)="carregar()">Tentar novamente</button>}
- <div class="look-grid">@for(look of looks();track look.id){<a class="look-card" [routerLink]="['/colecao',look.slug]"><div class="image-space" [style.--look-color]="look.cor"><span class="image-index">0{{look.id}} / 06</span><span class="image-label">FOTOGRAFIA A INSERIR</span></div><div class="look-name"><h3>{{look.nome}}</h3><span aria-hidden="true">↗</span></div><p>{{look.frase}}</p></a>}</div>
+ <div class="look-grid">@for(look of looks();track look.id){<article class="look-card">@if(look.imagens?.length){<clama-look-gallery [look]="look" [linkDetalhes]="true" />}@else{<a [routerLink]="['/colecao',look.slug]" [attr.aria-label]="'Ver detalhes de ' + look.nome"><div class="image-space" [style.--look-color]="look.cor"><span class="image-index">0{{look.id}} / 06</span><span class="image-label">FOTOGRAFIA A INSERIR</span></div></a>}<a class="look-card-copy" [routerLink]="['/colecao',look.slug]"><div class="look-name"><h3>{{look.nome}}</h3><span aria-hidden="true">↗</span></div><p>{{look.frase}}</p></a></article>}</div>
 </section>
