@@ -54,7 +54,7 @@ export async function onRequest({ request, env }) {
   try {
     const result = await env.VOZES_DB.prepare(
       'INSERT INTO mensagens (id, texto, criado_em) VALUES (?, ?, ?) ON CONFLICT(id) DO NOTHING'
-    ).bind(id, texto.trim(), new Date().toISOString()).run();
+    ).bind(id, texto.trim(), new Date(Date.now() - 3 * 60 * 60 * 1000).toISOString().replace('Z', '-03:00')).run();
     if (!result.success) return response(503, unavailable);
   } catch {
     // Não registrar texto nem detalhes do banco nos logs públicos da aplicação.

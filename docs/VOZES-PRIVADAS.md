@@ -42,14 +42,17 @@ No site publicado, abra Sua voz, escreva uma mensagem de teste e clique em Envia
 Para ler as mensagens, use sua conta Cloudflare: Storage & databases → D1 → clama-vozes → Console:
 
 ```sql
-SELECT texto, criado_em FROM mensagens ORDER BY criado_em DESC;
+SELECT texto,
+       strftime('%Y-%m-%dT%H:%M:%f', criado_em, '-3 hours') || '-03:00' AS horario_brasilia
+FROM mensagens
+ORDER BY julianday(criado_em) DESC;
 ```
 
 O site não possui consulta, listagem nem área pública de relatos. O endereço /api/vozes aceita somente POST; GET e outros métodos retornam 405. Dê acesso ao painel somente às pessoas da equipe que devem ler as mensagens.
 
 ## O que é armazenado
 
-Texto, data de envio em UTC e identificador aleatório do envio para evitar duplicatas em tentativas repetidas. O formulário não pede nome, e-mail ou telefone e não grava o rascunho no navegador. O código da aplicação não salva IP nem registra o texto nos logs. A Cloudflare pode manter logs operacionais próprios da plataforma.
+Texto, data de envio no horário de Brasília (UTC−03:00) e identificador aleatório do envio para evitar duplicatas em tentativas repetidas. O formulário não pede nome, e-mail ou telefone e não grava o rascunho no navegador. O código da aplicação não salva IP nem registra o texto nos logs. A Cloudflare pode manter logs operacionais próprios da plataforma.
 
 O aviso de privacidade é exibido acima do botão. A mensagem é enviada somente ao clicar em Enviar mensagem. Em caso de erro, o rascunho permanece na tela. Antes de configurar o banco, o envio retorna indisponível, sem confirmar um armazenamento que não ocorreu.
 
