@@ -148,3 +148,10 @@ header .marca .brand-tagline>span{display:inline;margin:0;font:inherit;letter-sp
 .history.section{display:block;padding-top:clamp(24px,4vw,56px)}
 .history>div{max-width:680px}
 .history .page-title{margin:18px 0 22px}
+
+.manifesto.section{padding-top:clamp(24px,4vw,56px);text-align:left}
+.manifesto .page-title{margin:20px 0 30px}
+.manifesto .manifesto-copy{display:grid;gap:20px;margin:0;max-width:600px}
+.manifesto-copy>div{border-top:1px solid var(--line);padding-top:12px}
+.manifesto .manifesto-copy h2{font-size:26px;line-height:1.15;letter-spacing:0;margin:0 0 6px}
+.manifesto .manifesto-copy p{font-size:15px;line-height:1.65;margin:0}
