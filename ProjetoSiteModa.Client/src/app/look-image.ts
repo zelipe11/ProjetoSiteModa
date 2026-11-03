@@ -5,12 +5,12 @@ let nextClipId = 0;
 
 @Component({selector:'clama-look-image',template:`
 @if(image.enquadramento && image.largura && image.altura){
- <svg [attr.viewBox]="viewBox()" preserveAspectRatio="xMidYMid meet" role="img" [attr.aria-label]="decorative ? null : image.alt" [attr.aria-hidden]="decorative ? 'true' : null" focusable="false">
+ <svg [attr.viewBox]="viewBox()" [style.translate]="image.ajuste" preserveAspectRatio="xMidYMid meet" role="img" [attr.aria-label]="decorative ? null : image.alt" [attr.aria-hidden]="decorative ? 'true' : null" focusable="false">
   <defs><clipPath [id]="clipId" clipPathUnits="userSpaceOnUse"><rect [attr.x]="inicio()" y="0" [attr.width]="image.largura / 2" [attr.height]="image.altura" /></clipPath></defs>
   <image [attr.clip-path]="'url(#' + clipId + ')'" [attr.href]="image.src" [attr.width]="image.largura" [attr.height]="image.altura" />
  </svg>
 }@else{
- <img [src]="image.src" [alt]="decorative ? '' : image.alt" loading="eager" decoding="async">
+ <img [src]="image.src" [style.translate]="image.ajuste" [alt]="decorative ? '' : image.alt" loading="eager" decoding="async">
 }
 `})
 export class LookImageView {

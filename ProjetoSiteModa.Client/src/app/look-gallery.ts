@@ -36,13 +36,22 @@ export class LookGallery implements OnChanges, OnDestroy {
  readonly pausado = signal(this.document.defaultView?.matchMedia('(prefers-reduced-motion: reduce)').matches ?? true);
  hovered = false;
  focused = false;
- private timer?: ReturnType<typeof setInterval>;
+ private timer?: ReturnType<typeof setTimeout>;
  ngOnChanges(){
   this.indice.set(0);
-  if(this.timer) clearInterval(this.timer);
-  if((this.look.imagens?.length ?? 0) > 1) this.timer = setInterval(()=>{
-   if(!this.pausado() && !this.hovered && !this.focused && !this.document.hidden) this.indice.update(i=>(i+1) % this.look.imagens!.length);
-  },5000);
+  if(this.timer) clearTimeout(this.timer);
+  if ((this.look.imagens?.length ?? 0) > 1) {
+   const delay = this.linkDetalhes ? 5000 + (this.look.id - 1) * 1000 : 5000;
+   this.agendarTroca(delay);
+  }
+ }
+ private agendarTroca(delay: number){
+  this.timer = setTimeout(() => {
+   if (!this.pausado() && !this.hovered && !this.focused && !this.document.hidden) {
+    this.indice.update(i => (i + 1) % this.look.imagens!.length);
+   }
+   this.agendarTroca(this.linkDetalhes ? 6000 : 5000);
+  }, delay);
  }
  tabId(i:number){return 'look-' + this.look.id + (this.linkDetalhes ? '-card' : '-detail') + '-tab-' + i;}
  panelId(i:number){return this.tabId(i) + '-panel';}
@@ -60,5 +69,5 @@ export class LookGallery implements OnChanges, OnDestroy {
   this.document.getElementById(this.tabId(next))?.focus();
  }
  sairDoFoco(event:FocusEvent){if(!(event.currentTarget as HTMLElement).contains(event.relatedTarget as Node | null)) this.focused=false;}
- ngOnDestroy(){if(this.timer) clearInterval(this.timer);}
+ ngOnDestroy(){if(this.timer) clearTimeout(this.timer);}
 }
