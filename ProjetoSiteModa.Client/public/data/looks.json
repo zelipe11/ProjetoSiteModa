@@ -81,7 +81,25 @@
     "frase": "Permanecer é um gesto de força.",
     "conceito": "A presença do corpo como manifesto e a força que se constrói também em coletivo.",
     "simbolismo": "A permanência, o amparo e a força coletiva.",
-    "cor": "#615448"
+    "cor": "#615448",
+    "imagens": [
+      {
+        "src": "images/looks/resistencia-frente-costas.jpg",
+        "alt": "Quarto vestido, Resistência: vista de frente",
+        "legenda": "Frente",
+        "enquadramento": "esquerda",
+        "largura": 1536,
+        "altura": 1024
+      },
+      {
+        "src": "images/looks/resistencia-frente-costas.jpg",
+        "alt": "Quarto vestido, Resistência: vista de costas",
+        "legenda": "Costas",
+        "enquadramento": "direita",
+        "largura": 1536,
+        "altura": 1024
+      }
+    ]
   },
   {
     "id": 5,
