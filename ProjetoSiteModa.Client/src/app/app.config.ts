@@ -12,7 +12,7 @@ registerLocaleData(localePt);
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(), provideHttpClient(),
-    provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' }), ...(environment.githubPages ? [withHashLocation()] : []))
+    provideRouter(routes, withInMemoryScrolling({ scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' }), ...(environment.hashRouting ? [withHashLocation()] : []))
   ]
 };
 

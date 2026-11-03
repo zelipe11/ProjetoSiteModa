@@ -1,1 +1,1 @@
-export const environment = { githubPages: true };
+export const environment = { staticLooks: true, hashRouting: true };

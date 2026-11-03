@@ -9,11 +9,11 @@ export class LooksService {
   private readonly http = inject(HttpClient);
 
   listar() {
-    return this.http.get<Look[]>(environment.githubPages ? 'data/looks.json' : '/api/looks');
+    return this.http.get<Look[]>(environment.staticLooks ? 'data/looks.json' : '/api/looks');
   }
 
   obter(slug: string) {
-    if (!environment.githubPages) {
+    if (!environment.staticLooks) {
       return this.http.get<Look>('/api/looks/' + encodeURIComponent(slug));
     }
     return this.listar().pipe(map(looks => {
