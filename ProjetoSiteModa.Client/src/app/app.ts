@@ -13,5 +13,5 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 `})
 export class App {
  readonly menu = signal(false);
- readonly links = [{id:'colecao',nome:'A coleção'},{id:'manifesto',nome:'Manifesto'},{id:'historia',nome:'Nossa história'},{id:'realidade',nome:'Dados e realidade'},{id:'editorial',nome:'Editorial'},{id:'vozes',nome:'Sua voz'},{id:'contato',nome:'Contato'}];
+ readonly links = [{id:'colecao',nome:'A coleção'},{id:'manifesto',nome:'Manifesto'},{id:'historia',nome:'Nossa história'},{id:'realidade',nome:'Dados e realidade'},{id:'editorial',nome:'Editorial'},{id:'vozes',nome:'Sua voz'},{id:'sobre-nos',nome:'Sobre Nós'},{id:'contato',nome:'Contato'}];
 }

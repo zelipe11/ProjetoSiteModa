@@ -98,3 +98,7 @@ Os enquadramentos e a neutralização do vermelho são feitos por CSS em app.scs
 As imagens individuais sacola.jpg, caixa.jpg, tags.jpg e etiqueta.jpg substituem os recortes das pranchas na seção de materiais da marca. São exibidas na proporção original e nas cores originais, sem filtro de cor.
 
 Os ambientes usam fachada.jpg, exposicao.jpg e acolhimento.jpg, também na proporção e nas cores originais, sem filtro. Permanecem identificados como estudos de ambientação.
+
+## Sobre Nós
+
+A rota /sobre-nos apresenta o texto da equipe e o espaço reservado para os integrantes. Conteúdo em ProjetoSiteModa.Client/src/app/sobre-nos.html; nomes e fotografias serão incluídos quando fornecidos.

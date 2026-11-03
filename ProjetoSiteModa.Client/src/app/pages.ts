@@ -12,3 +12,6 @@ export class Editorial {}
 export class Voices {readonly escrita = signal(''); readonly frases = ['Minha voz pertence a mim.', 'Existir também é resistir.', 'Que a nossa presença abra caminhos.'];}
 @Component({selector:'clama-contato',imports:[RouterLink],templateUrl:'./contato.html'})
 export class Contact {}
+
+@Component({selector:'clama-sobre-nos',imports:[RouterLink],templateUrl:'./sobre-nos.html'})
+export class About {}
