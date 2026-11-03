@@ -4,7 +4,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 @Component({selector:'app-root', imports:[RouterOutlet, RouterLink, RouterLinkActive, BrandMark], template: `
 <button class="skip" type="button" (click)="conteudo.focus()">Pular para o conteúdo</button>
 <header><a class="marca" routerLink="/" (click)="menu.set(false)" aria-label="CLAMA, início"><clama-brand-mark /><span class="brand-tagline">MODA · MEMÓRIA · RESISTÊNCIA</span></a>
-<button class="menu-toggle" (click)="menu.set(!menu())" [attr.aria-expanded]="menu()" aria-controls="navegacao">{{menu() ? 'Fechar' : 'Menu'}}</button>
+<button class="menu-toggle" type="button" (click)="menu.set(!menu())" [attr.aria-expanded]="menu()" [attr.aria-label]="menu() ? 'Fechar menu' : 'Abrir menu'" aria-controls="navegacao"><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></button>
 <nav id="navegacao" [class.aberto]="menu()" aria-label="Navegação principal">
 @for(item of links; track item.id){<a [routerLink]="['/',item.id]" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="menu.set(false)">{{item.nome}}</a>}
 </nav></header>
