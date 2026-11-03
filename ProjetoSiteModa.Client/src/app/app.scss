@@ -144,3 +144,7 @@ header .marca .brand-tagline>span{display:inline;margin:0;font:inherit;letter-sp
  .collection .section-top{align-items:center;flex-wrap:wrap;gap:6px 12px}
  .collection .section-top>span{max-width:none;white-space:nowrap;letter-spacing:.12em;margin-inline-start:auto}
 }
+
+.history.section{display:block;padding-top:clamp(24px,4vw,56px)}
+.history>div{max-width:680px}
+.history .page-title{margin:18px 0 22px}
