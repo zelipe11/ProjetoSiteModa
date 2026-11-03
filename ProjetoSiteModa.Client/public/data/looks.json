@@ -49,12 +49,30 @@
   },
   {
     "id": 3,
-    "slug": "ruptura",
-    "nome": "Ruptura",
-    "frase": "Romper também é um começo.",
-    "conceito": "O instante em que a narrativa imposta é interrompida e abre espaço para a própria história.",
-    "simbolismo": "A quebra do ciclo e a possibilidade de mudança.",
-    "cor": "#3b3835"
+    "slug": "culpa",
+    "nome": "Culpa",
+    "frase": "A culpa nunca é de quem sofre.",
+    "conceito": "O terceiro vestido da coleção propõe um olhar sobre a culpabilização das mulheres e a necessidade de questionar as narrativas que as silenciam.",
+    "simbolismo": "O questionamento da culpa imposta e o direito de contar a própria história.",
+    "cor": "#3b3835",
+    "imagens": [
+      {
+        "src": "images/looks/culpa-frente-costas.jpg",
+        "alt": "Terceiro vestido, Culpa: vista de frente",
+        "legenda": "Frente",
+        "enquadramento": "esquerda",
+        "largura": 742,
+        "altura": 780
+      },
+      {
+        "src": "images/looks/culpa-frente-costas.jpg",
+        "alt": "Terceiro vestido, Culpa: vista de costas",
+        "legenda": "Costas",
+        "enquadramento": "direita",
+        "largura": 742,
+        "altura": 780
+      }
+    ]
   },
   {
     "id": 4,

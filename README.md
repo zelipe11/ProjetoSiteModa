@@ -114,3 +114,5 @@ Para adicionar outras peças, preencha imagens em public/data/looks.json com src
 As duas galerias também possuem setas de anterior/próxima sobre a imagem. Aparecem no hover e no foco de teclado, com controles menores na coleção; ficam ocultas em telas de até 768px e em dispositivos de toque. Clicar em uma seta pausa a troca automática e percorre as imagens em ciclo, sem abrir os detalhes por engano.
 
 O segundo vestido é Danos (/colecao/danos); /colecao/ferida redireciona para ele. A imagem danos-frente-costas.jpg foi preservada sem edição: look-image.ts apresenta cada metade por um enquadramento SVG, sem esticar nem cortar a barra. Os campos largura, altura e enquadramento no catálogo informam as dimensões e a vista. A mesma renderização é usada na imagem principal e nas miniaturas.
+
+O terceiro vestido é Culpa (/colecao/culpa); /colecao/ruptura redireciona para ele. A imagem culpa-frente-costas.jpg é apresentada com enquadramentos independentes e recorte limitado, preservando o arquivo original. Usa a mesma galeria automática e os mesmos controles dos demais vestidos.
