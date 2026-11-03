@@ -84,20 +84,14 @@
     "cor": "#615448",
     "imagens": [
       {
-        "src": "images/looks/resistencia-frente-costas.jpg",
-        "alt": "Quarto vestido, Resistência: vista de frente",
-        "legenda": "Frente",
-        "enquadramento": "esquerda",
-        "largura": 1536,
-        "altura": 1024
+        "src": "images/looks/resistencia-frente.png",
+        "alt": "Quarto vestido, Resistência: vista de frente com a saia completa",
+        "legenda": "Frente"
       },
       {
-        "src": "images/looks/resistencia-frente-costas.jpg",
-        "alt": "Quarto vestido, Resistência: vista de costas",
-        "legenda": "Costas",
-        "enquadramento": "direita",
-        "largura": 1536,
-        "altura": 1024
+        "src": "images/looks/resistencia-costas.png",
+        "alt": "Quarto vestido, Resistência: vista de costas com a saia completa",
+        "legenda": "Costas"
       }
     ]
   },
