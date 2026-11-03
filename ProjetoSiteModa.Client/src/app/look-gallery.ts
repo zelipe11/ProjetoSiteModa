@@ -7,18 +7,20 @@ import { Look } from './look';
 <div class="look-gallery" [class.compact]="linkDetalhes" role="region" aria-roledescription="carrossel" [attr.aria-label]="'Imagens do vestido ' + look.nome" (mouseenter)="hovered = true" (mouseleave)="hovered = false" (focusin)="focused = true" (focusout)="sairDoFoco($event)">
   <div class="gallery-stage">
     @for (image of look.imagens; track image.legenda; let i = $index) {
-      <div class="gallery-slide" [id]="panelId(i)" [hidden]="indice() !== i" role="tabpanel" [attr.aria-labelledby]="tabId(i)">
+      <div class="gallery-slide" [id]="panelId(i)" [hidden]="indice() !== i" [attr.role]="linkDetalhes ? 'group' : 'tabpanel'" [attr.aria-label]="linkDetalhes ? image.legenda : null" [attr.aria-labelledby]="linkDetalhes ? null : tabId(i)">
         <div class="gallery-view"><img [src]="image.src" [alt]="image.alt" loading="eager" decoding="async"></div>
       </div>
     }
     @if (linkDetalhes) {<a class="gallery-detail-link" [routerLink]="['/colecao',look.slug]" [attr.aria-label]="'Ver detalhes do vestido ' + look.nome"></a>}
     <span class="gallery-counter">{{indice() + 1}} / {{look.imagens?.length}}</span>
   </div>
+  @if (!linkDetalhes) {
   <div class="gallery-thumbnails" role="tablist" [attr.aria-label]="'Escolher imagem do vestido ' + look.nome">
     @for (image of look.imagens; track image.legenda; let i = $index) {
       <button type="button" role="tab" class="gallery-thumb" [id]="tabId(i)" [class.selected]="indice() === i" [attr.aria-selected]="indice() === i" [attr.aria-controls]="panelId(i)" [attr.aria-label]="image.legenda" [attr.title]="image.legenda" [attr.tabindex]="indice() === i ? 0 : -1" (click)="selecionar(i)" (keydown)="teclado($event,i)"><img [src]="image.src" alt="" loading="eager" decoding="async"></button>
     }
   </div>
+  }
 </div>
 `})
 export class LookGallery implements OnChanges, OnDestroy {

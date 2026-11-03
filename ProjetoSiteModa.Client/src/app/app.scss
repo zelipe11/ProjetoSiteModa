@@ -94,14 +94,10 @@ clama-look-gallery{display:block}
 .gallery-thumb:hover{border-color:var(--accent)}
 .gallery-thumb.selected{border:2px solid var(--accent);padding:2px;box-shadow:0 0 0 2px #5844381a}
 .detail-gallery{max-width:620px;margin:0 auto}
-.look-gallery.compact{grid-template-columns:minmax(0,1fr) 44px;gap:8px}
-.compact .gallery-thumb{width:44px;border-radius:6px}
-.compact .gallery-thumbnails{gap:8px}
+.look-gallery.compact{grid-template-columns:minmax(0,1fr);gap:0}
 .compact .gallery-stage{border-radius:9px}
 @media(max-width:650px){
  .look-gallery{grid-template-columns:minmax(0,1fr) 48px;gap:10px}
  .gallery-thumb{width:48px}
- .look-gallery.compact{grid-template-columns:minmax(0,1fr);gap:10px}
- .compact .gallery-thumbnails{flex-direction:row;flex-wrap:wrap}
  .gallery-counter{right:7px;top:7px;padding:5px 7px}
 }
