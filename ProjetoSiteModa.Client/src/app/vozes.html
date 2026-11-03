@@ -1,1 +1,19 @@
-<section id="vozes" class="section voices"><p class="eyebrow">06 / SUA VOZ TAMBÉM IMPORTA</p><h1 class="page-title">Há força no que<br><em>temos a dizer.</em></h1><p class="voices-intro">Palavras para ocupar espaço. Estas são mensagens da CLAMA, abertas a quem encontra nelas um eco.</p><div class="quotes">@for(frase of frases;track frase){<blockquote>“{{frase}}”<cite>CLAMA</cite></blockquote>}</div><div class="writing"><div><h3>Uma palavra para você.</h3><p>Se quiser, use este espaço para escrever. Seu texto fica apenas nesta tela, não é enviado nem publicado e desaparece ao sair da página.</p></div><div><label for="voz">O que sua voz quer dizer hoje?</label><textarea id="voz" maxlength="1000" rows="4" [value]="escrita()" (input)="escrita.set($any($event.target).value)" placeholder="Comece no seu tempo…"></textarea><div class="writing-actions"><span>{{escrita().length}} / 1000</span><button (click)="escrita.set('')" [disabled]="!escrita()">Apagar meu texto</button></div></div></div></section>
+<section id="vozes" class="section voices">
+ <p class="eyebrow">06 / SUA VOZ TAMBÉM IMPORTA</p>
+ <h1 class="page-title">Há força no que<br><em>temos a dizer.</em></h1>
+ <p class="voices-intro">Palavras para ocupar espaço. Estas são mensagens da CLAMA, abertas a quem encontra nelas um eco.</p>
+ <div class="quotes">@for(frase of frases;track frase){<blockquote>“{{frase}}”<cite>CLAMA</cite></blockquote>}</div>
+ <div class="writing">
+  <div><h3>Um espaço para a sua voz.</h3><p>Se quiser, compartilhe uma mensagem com a equipe CLAMA. O texto será guardado em um espaço privado, acessível à equipe responsável pelo projeto.</p><p class="voice-privacy">Sua mensagem não será publicada no site. Não pedimos nome nem contato. Evite incluir informações que identifiquem você ou outras pessoas.</p></div>
+  <form (submit)="enviar($event)" [attr.aria-busy]="enviando()">
+   <label for="voz">O que sua voz quer dizer hoje?</label>
+   <textarea id="voz" name="texto" minlength="3" maxlength="1000" required rows="6" [disabled]="enviando()" [value]="escrita()" (input)="alterarTexto($any($event.target).value)" aria-describedby="voz-contagem voz-privacidade" placeholder="Comece no seu tempo…"></textarea>
+   <div class="writing-actions"><span id="voz-contagem">{{escrita().length}} / 1000</span><button type="button" (click)="limpar()" [disabled]="!escrita() || enviando()">Limpar rascunho</button></div>
+   <div class="voice-trap" aria-hidden="true"><label for="voz-website">Website</label><input id="voz-website" name="website" tabindex="-1" autocomplete="off" [value]="website()" (input)="website.set($any($event.target).value)"></div>
+   <label class="voice-consent" for="voz-consentimento"><input id="voz-consentimento" type="checkbox" required [disabled]="enviando()" [checked]="consentimento()" (change)="consentimento.set($any($event.target).checked)"><span id="voz-privacidade">Quero enviar este texto para armazenamento privado e leitura pela equipe CLAMA.</span></label>
+   <button class="voice-submit" type="submit" [disabled]="enviando() || escrita().trim().length < 3 || !consentimento()">{{enviando() ? 'Enviando…' : 'Enviar mensagem'}}</button>
+   @if(sucesso()){<p class="voice-feedback" role="status">{{sucesso()}}</p>}
+   @if(erro()){<p class="voice-feedback voice-error" role="alert">{{erro()}}</p>}
+  </form>
+ </div>
+</section>

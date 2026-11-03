@@ -8,7 +8,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:pages": "ng build --configuration production,pages",
-    "build:cloudflare": "ng build --configuration production,pages,cloudflare"
+    "build:cloudflare": "ng build --configuration production,pages,cloudflare",
+    "test:api": "node --test tests/vozes.test.mjs",
+    "check:functions": "wrangler pages functions build --outdir ../artifacts/functions",
+    "db:local": "wrangler d1 migrations apply clama-vozes-local --local --config wrangler.local.toml",
+    "dev:cloudflare": "wrangler pages dev dist/cloudflare --d1 VOZES_DB=00000000-0000-0000-0000-000000000001 --compatibility-date 2026-11-02 --port 5121 --ip 127.0.0.1"
   },
   "private": true,
   "packageManager": "npm@11.6.2",
@@ -27,6 +31,7 @@
     "@angular/cli": "^21.2.29",
     "@angular/compiler-cli": "^21.2.0",
     "prettier": "^3.8.1",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "wrangler": "^4.156.2"
   }
 }

@@ -19,7 +19,7 @@ O build compila Angular para a pasta gerada ProjetoSiteModa.Server/wwwroot. Não
 - API GET /api/looks, GET /api/looks/{slug} e GET /api/health.
 - Os conceitos dos looks são propostas editoriais. Materiais, técnicas e construção aguardam a ficha técnica real.
 - Imagens e vídeos foram deixados vazios a pedido. O contato também aguarda definição.
-- O espaço de escrita é privado e temporário: não envia, não salva e não publica relatos. As frases exibidas são mensagens da marca, não depoimentos reais.
+- Sua voz permite enviar mensagens privadas para um banco Cloudflare D1 após sua configuração. As frases exibidas são mensagens da marca, não depoimentos reais. O site não publica nem lista os textos recebidos.
 
 ## Adicionar imagens depois
 
@@ -122,3 +122,7 @@ O quarto vestido é Resistência (/colecao/resistencia). O arquivo original resi
 O quinto vestido é Herança (/colecao/heranca); /colecao/florescer redireciona para ele. A imagem heranca-frente-costas.jpg preserva as cores e o desenho fornecidos, com frente e costas na galeria compartilhada.
 
 O sexto vestido é Libertação (/colecao/libertacao); /colecao/voz redireciona para ele. As vistas de apresentação libertacao-frente.png e libertacao-costas.png foram separadas com edição assistida para preservar o casaco completo. A prancha original está em libertacao-frente-costas.jpg. Veja docs/LIBERTACAO-IMAGENS.md.
+
+## Mensagens privadas
+
+A configuração de Sua voz está descrita em [VOZES-PRIVADAS.md](docs/VOZES-PRIVADAS.md). Para ativar, crie o banco clama-vozes, execute a migração SQL e adicione o binding VOZES_DB no painel Cloudflare. Até essa ativação, o formulário informa indisponibilidade e mantém o texto na tela.

@@ -1,8 +1,9 @@
+import { Voices } from './voices';
 import { Routes } from '@angular/router';
 import { Home } from './home';
 import { Collection } from './collection';
 import { LookPage } from './look-page';
-import { Manifesto, History, Reality, Editorial, Voices, Contact, About } from './pages';
+import { Manifesto, History, Reality, Editorial, Contact, About } from './pages';
 export const routes: Routes = [
  {path:'',component:Home,pathMatch:'full',title:'CLAMA — Moda, memória e resistência'},
  {path:'colecao',component:Collection,title:'A coleção — CLAMA'},

@@ -19,16 +19,16 @@ Configuração preparada para o endereço desejado https://clamamoda.pages.dev, 
 | Build output directory | dist/cloudflare |
 | NODE_VERSION (se solicitado) | 24.13.0 |
 
-5. Salve e inicie o deploy. Se clamamoda já estiver ocupado, escolha outro nome e ajuste `name` em ProjetoSiteModa.Client/wrangler.toml para o mesmo valor.
+5. Salve e inicie o deploy. Se clamamoda já estiver ocupado, escolha outro nome no painel.
 6. Abra o endereço retornado pelo Cloudflare quando o deploy concluir. Não é necessário registrar um domínio .com.br para usar pages.dev.
 
 A integração Git fará novos builds e publicações a cada push na master. Confirme nas configurações de Build / Branch control que os deploys automáticos de produção estão habilitados.
 
-O Cloudflare instala as dependências do package-lock.json. A versão do Node está definida em .node-version. O wrangler.toml informa o nome e a pasta de saída; a conexão Git e a branch de produção são selecionadas no painel.
+O Cloudflare instala as dependências do package-lock.json. A versão do Node está definida em .node-version. A configuração de produção, incluindo o binding do banco, é feita pelo painel. wrangler.example.toml é apenas uma referência, sem aplicação automática.
 
 ## Funcionamento
 
-O site publicado é estático e usa os dados públicos de public/data/looks.json, sem depender da API .NET. O Visual Studio continua usando a API local. As URLs públicas usam /#/colecao, /#/manifesto e as outras rotas existentes, permitindo recarregar links diretos.
+O site publicado é estático e usa os dados públicos de public/data/looks.json, sem depender da API .NET. O formulário Sua voz utiliza uma Pages Function e um banco D1 privado; siga VOZES-PRIVADAS.md para ativar. O Visual Studio continua usando a API local. As URLs públicas usam /#/colecao, /#/manifesto e as outras rotas existentes, permitindo recarregar links diretos.
 
 Para futuras imagens, prefira URLs relativas como images/arquivo.jpg, sem barra inicial.
 

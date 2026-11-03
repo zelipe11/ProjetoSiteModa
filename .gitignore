@@ -7,3 +7,7 @@
 *.user
 ProjetoSiteModa.Server/wwwroot/
 artifacts/
+
+**/.wrangler/
+**/.dev.vars
+**/.dev.vars.*

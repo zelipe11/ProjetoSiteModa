@@ -8,6 +8,7 @@ var looks = System.Text.Json.JsonSerializer.Deserialize<Look[]>(
     ?? throw new InvalidOperationException("Catálogo da coleção não encontrado.");
 app.MapGet("/api/looks", () => looks);
 app.MapGet("/api/looks/{slug}", (string slug) => looks.FirstOrDefault(l => l.Slug == slug) is { } look ? Results.Ok(look) : Results.NotFound());
+app.MapPost("/api/vozes", () => Results.Json(new { mensagem = "O envio privado está disponível na hospedagem Cloudflare. Para testar localmente, utilize o comando dev:cloudflare descrito no projeto." }, statusCode: 503));
 app.MapGet("/api/health", () => Results.Ok(new { status = "ok" }));
 app.MapFallback("/api/{**path}", () => Results.NotFound());
 app.MapFallbackToFile("index.html");
