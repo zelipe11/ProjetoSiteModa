@@ -15,7 +15,7 @@ O build compila Angular para a pasta gerada ProjetoSiteModa.Server/wwwroot. Não
 
 - Página inicial com apresentação da CLAMA e acesso à coleção.
 - Telas independentes: /colecao, /manifesto, /historia, /realidade, /editorial, /vozes e /contato.
-- Páginas próprias para Silêncio, Ferida, Ruptura, Resistência, Florescer e Voz.
+- Páginas próprias para Dor, Danos, Culpa, Resistência, Herança e Voz.
 - API GET /api/looks, GET /api/looks/{slug} e GET /api/health.
 - Os conceitos dos looks são propostas editoriais. Materiais, técnicas e construção aguardam a ficha técnica real.
 - Imagens e vídeos foram deixados vazios a pedido. O contato também aguarda definição.
@@ -118,3 +118,5 @@ O segundo vestido é Danos (/colecao/danos); /colecao/ferida redireciona para el
 O terceiro vestido é Culpa (/colecao/culpa); /colecao/ruptura redireciona para ele. A imagem culpa-frente-costas.jpg é apresentada com enquadramentos independentes e recorte limitado, preservando o arquivo original. Usa a mesma galeria automática e os mesmos controles dos demais vestidos.
 
 O quarto vestido é Resistência (/colecao/resistencia). A imagem resistencia-frente-costas.jpg utiliza a galeria compartilhada, com enquadramentos de frente e costas e sem filtro de cor.
+
+O quinto vestido é Herança (/colecao/heranca); /colecao/florescer redireciona para ele. A imagem heranca-frente-costas.jpg preserva as cores e o desenho fornecidos, com frente e costas na galeria compartilhada.

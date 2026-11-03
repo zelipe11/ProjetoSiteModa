@@ -103,12 +103,30 @@
   },
   {
     "id": 5,
-    "slug": "florescer",
-    "nome": "Florescer",
-    "frase": "Reconstruir no próprio tempo.",
-    "conceito": "A reconstrução como um percurso singular: existir para além da dor, com liberdade para recomeçar.",
-    "simbolismo": "O cuidado, a autonomia e o recomeço.",
-    "cor": "#c5b9ad"
+    "slug": "heranca",
+    "nome": "Herança",
+    "frase": "A memória também é resistência.",
+    "conceito": "O quinto vestido da coleção propõe a memória como uma presença que atravessa gerações e transforma o luto em expressão.",
+    "simbolismo": "A preservação das histórias e a continuidade da luta por suas vozes.",
+    "cor": "#c5b9ad",
+    "imagens": [
+      {
+        "src": "images/looks/heranca-frente-costas.jpg",
+        "alt": "Quinto vestido, Herança: vista de frente",
+        "legenda": "Frente",
+        "enquadramento": "esquerda",
+        "largura": 1254,
+        "altura": 1254
+      },
+      {
+        "src": "images/looks/heranca-frente-costas.jpg",
+        "alt": "Quinto vestido, Herança: vista de costas",
+        "legenda": "Costas",
+        "enquadramento": "direita",
+        "largura": 1254,
+        "altura": 1254
+      }
+    ]
   },
   {
     "id": 6,
