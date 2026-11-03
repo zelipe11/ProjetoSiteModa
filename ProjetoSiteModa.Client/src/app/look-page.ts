@@ -33,5 +33,5 @@ export class LookPage {
  private request(slug:string){return this.catalogo.obter(slug).pipe(catchError((e:HttpErrorResponse)=>{this.error.set(true);this.notFound.set(e.status === 404);return of(null);}));}
  private receber(p:Look|null){this.look.set(p);this.loading.set(false);this.title.setTitle(p ? p.nome+' — CLAMA' : 'A coleção — CLAMA');}
  carregar(){this.reset();this.request(this.route.snapshot.paramMap.get('slug') || '').subscribe(p=>this.receber(p));}
- proximo(id:number){return ['dor','danos','culpa','resistencia','heranca','voz'][id % 6];}
+ proximo(id:number){return ['dor','danos','culpa','resistencia','heranca','libertacao'][id % 6];}
 }

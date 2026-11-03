@@ -124,11 +124,23 @@
   },
   {
     "id": 6,
-    "slug": "voz",
-    "nome": "Voz",
-    "frase": "Nossa história, por nós mesmas.",
-    "conceito": "A expressão que ocupa espaço e faz da moda uma linguagem para ser vista e ouvida.",
-    "simbolismo": "O direito à expressão e ao protagonismo.",
-    "cor": "#9b8976"
+    "slug": "libertacao",
+    "nome": "Libertação",
+    "frase": "O direito de existir em liberdade.",
+    "conceito": "O sexto vestido da coleção propõe a liberdade como expressão de autonomia, presença e direito à própria história.",
+    "simbolismo": "A afirmação da própria voz e da liberdade de ocupar o mundo.",
+    "cor": "#9b8976",
+    "imagens": [
+      {
+        "src": "images/looks/libertacao-frente.png",
+        "alt": "Sexto vestido, Libertação: vista de frente",
+        "legenda": "Frente"
+      },
+      {
+        "src": "images/looks/libertacao-costas.png",
+        "alt": "Sexto vestido, Libertação: vista de costas",
+        "legenda": "Costas"
+      }
+    ]
   }
 ]
