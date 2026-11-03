@@ -113,3 +113,6 @@ clama-look-gallery{display:block}
 .compact .gallery-arrow-next{right:8px}
 .compact .gallery-arrow:hover{background:#f2efe9ed;color:var(--ink)}
 @media(max-width:768px),(hover:none),(pointer:coarse){.gallery-arrow{display:none}}
+
+clama-look-image{display:block;width:100%;height:100%}
+clama-look-image svg{display:block;width:100%;height:100%;overflow:hidden}

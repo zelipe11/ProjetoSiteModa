@@ -30,6 +30,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Angular", "Angular", "{8647
 		ProjetoSiteModa.Client\src\app\contato.html = ProjetoSiteModa.Client\src\app\contato.html
 		ProjetoSiteModa.Client\src\app\sobre-nos.html = ProjetoSiteModa.Client\src\app\sobre-nos.html
 		ProjetoSiteModa.Client\src\app\look-gallery.ts = ProjetoSiteModa.Client\src\app\look-gallery.ts
+		ProjetoSiteModa.Client\src\app\look-image.ts = ProjetoSiteModa.Client\src\app\look-image.ts
 	EndProjectSection
 EndProject
 Global

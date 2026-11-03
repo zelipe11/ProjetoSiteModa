@@ -7,6 +7,7 @@ export const routes: Routes = [
  {path:'',component:Home,pathMatch:'full',title:'CLAMA — Moda, memória e resistência'},
  {path:'colecao',component:Collection,title:'A coleção — CLAMA'},
  {path:'colecao/silencio',redirectTo:'colecao/dor',pathMatch:'full'},
+ {path:'colecao/ferida',redirectTo:'colecao/danos',pathMatch:'full'},
  {path:'colecao/:slug',component:LookPage,title:'A coleção — CLAMA'},
  {path:'manifesto',component:Manifesto,title:'Manifesto — CLAMA'},
  {path:'historia',component:History,title:'Nossa história — CLAMA'},

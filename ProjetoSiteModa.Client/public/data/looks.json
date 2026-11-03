@@ -22,12 +22,30 @@
   },
   {
     "id": 2,
-    "slug": "ferida",
-    "nome": "Ferida",
-    "frase": "Há marcas que o tempo não apaga.",
-    "conceito": "A memória da dor como ponto de partida para a expressão, sem reduzir uma mulher às marcas que carrega.",
-    "simbolismo": "A memória e o reconhecimento da dor.",
-    "cor": "#887464"
+    "slug": "danos",
+    "nome": "Danos",
+    "frase": "As marcas que permanecem.",
+    "conceito": "O segundo vestido da coleção propõe um olhar para as marcas deixadas pela violência e para a importância de reconhecê-las.",
+    "simbolismo": "O reconhecimento dos danos e a necessidade de dar visibilidade às histórias.",
+    "cor": "#887464",
+    "imagens": [
+      {
+        "src": "images/looks/danos-frente-costas.jpg",
+        "alt": "Segundo vestido, Danos: vista de frente",
+        "legenda": "Frente",
+        "enquadramento": "esquerda",
+        "largura": 1377,
+        "altura": 1142
+      },
+      {
+        "src": "images/looks/danos-frente-costas.jpg",
+        "alt": "Segundo vestido, Danos: vista de costas",
+        "legenda": "Costas",
+        "enquadramento": "direita",
+        "largura": 1377,
+        "altura": 1142
+      }
+    ]
   },
   {
     "id": 3,
