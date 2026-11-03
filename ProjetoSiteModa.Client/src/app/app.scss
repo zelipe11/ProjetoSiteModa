@@ -78,8 +78,9 @@ clama-look-gallery{display:block}
 .look-card-copy{display:block;text-decoration:none}
 .look-card-copy>p{font-size:12px;line-height:1.7;color:var(--muted);margin-top:4px}
 .gallery-stage{position:relative;background:white;aspect-ratio:3/4;overflow:hidden}
-.gallery-slide{position:absolute;inset:0}
-.gallery-slide[hidden]{display:none}
+.gallery-slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .65s ease-in-out,visibility 0s linear .65s}
+.gallery-slide.is-active{opacity:1;visibility:visible;transition-delay:0s}
+@media(prefers-reduced-motion:reduce){.gallery-slide{transition:none}}
 .gallery-view{width:100%;height:100%;position:relative;overflow:hidden}
 .gallery-view img{display:block;width:100%;height:100%;object-fit:contain}
 .gallery-detail-link{position:absolute;inset:0;z-index:1}

@@ -8,7 +8,7 @@ import { Look } from './look';
 <div class="look-gallery" [class.compact]="linkDetalhes" role="region" aria-roledescription="carrossel" [attr.aria-label]="'Imagens do vestido ' + look.nome" (mouseenter)="hovered = true" (mouseleave)="hovered = false" (focusin)="focused = true" (focusout)="sairDoFoco($event)">
   <div class="gallery-stage">
     @for (image of look.imagens; track image.legenda; let i = $index) {
-      <div class="gallery-slide" [id]="panelId(i)" [hidden]="indice() !== i" [attr.role]="linkDetalhes ? 'group' : 'tabpanel'" [attr.aria-label]="linkDetalhes ? image.legenda : null" [attr.aria-labelledby]="linkDetalhes ? null : tabId(i)">
+      <div class="gallery-slide" [id]="panelId(i)" [class.is-active]="indice() === i" [attr.aria-hidden]="indice() !== i ? true : null" [attr.role]="linkDetalhes ? 'group' : 'tabpanel'" [attr.aria-label]="linkDetalhes ? image.legenda : null" [attr.aria-labelledby]="linkDetalhes ? null : tabId(i)">
         <div class="gallery-view"><clama-look-image [image]="image" /></div>
       </div>
     }
@@ -41,7 +41,7 @@ export class LookGallery implements OnChanges, OnDestroy {
   this.indice.set(0);
   if(this.timer) clearTimeout(this.timer);
   if ((this.look.imagens?.length ?? 0) > 1) {
-   const delay = this.linkDetalhes ? 5000 + (this.look.id - 1) * 1000 : 5000;
+   const delay = this.linkDetalhes ? 7000 + (this.look.id - 1) * 2000 : 7000;
    this.agendarTroca(delay);
   }
  }
@@ -50,7 +50,7 @@ export class LookGallery implements OnChanges, OnDestroy {
    if (!this.pausado() && !this.hovered && !this.focused && !this.document.hidden) {
     this.indice.update(i => (i + 1) % this.look.imagens!.length);
    }
-   this.agendarTroca(this.linkDetalhes ? 6000 : 5000);
+   this.agendarTroca(this.linkDetalhes ? 12000 : 7000);
   }, delay);
  }
  tabId(i:number){return 'look-' + this.look.id + (this.linkDetalhes ? '-card' : '-detail') + '-tab-' + i;}
