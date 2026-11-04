@@ -9,7 +9,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 @for(item of links; track item.id){<a [routerLink]="['/',item.id]" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="menu.set(false)">{{item.nome}}</a>}
 </nav></header>
 <main #conteudo id="conteudo" tabindex="-1"><router-outlet /></main>
-<footer><a class="marca" routerLink="/" aria-label="CLAMA, início"><clama-brand-mark /></a><p>Moda como expressão.<br>Memória como resistência.</p><a routerLink="/realidade" fragment="apoio">Encontre apoio ↗</a><small>CLAMA · Projeto de coleção autoral</small></footer>
+<footer><a class="marca" routerLink="/" aria-label="CLAMA, início"><clama-brand-mark /></a><p>Moda como expressão.<br>Memória como resistência.</p><a routerLink="/realidade" fragment="apoio">Encontre apoio <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" /></svg></a><small>CLAMA · Projeto de coleção autoral</small></footer>
 `})
 export class App {
  readonly menu = signal(false);
