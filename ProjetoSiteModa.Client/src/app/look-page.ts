@@ -1,6 +1,6 @@
 import { LookGallery } from './look-gallery';
 import { Component, inject, signal } from '@angular/core';
-import { HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { LooksService } from './looks.service';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Title } from '@angular/platform-browser';
@@ -22,6 +22,8 @@ import { Look } from './look';
 </section>`})
 export class LookPage {
  private readonly catalogo = inject(LooksService);
+ private readonly http = inject(HttpClient);
+ private registrado = false;
  private readonly route = inject(ActivatedRoute);
  private readonly title = inject(Title);
  readonly look = signal<Look|null>(null);
@@ -29,9 +31,9 @@ export class LookPage {
  readonly error = signal(false);
  readonly notFound = signal(false);
  constructor(){this.route.paramMap.pipe(tap(()=>this.reset()),switchMap(params=>this.request(params.get('slug') || '')),takeUntilDestroyed()).subscribe(p=>this.receber(p));}
- private reset(){this.loading.set(true);this.error.set(false);this.notFound.set(false);this.look.set(null);}
+ private reset(){this.registrado=false;this.loading.set(true);this.error.set(false);this.notFound.set(false);this.look.set(null);}
  private request(slug:string){return this.catalogo.obter(slug).pipe(catchError((e:HttpErrorResponse)=>{this.error.set(true);this.notFound.set(e.status === 404);return of(null);}));}
- private receber(p:Look|null){this.look.set(p);this.loading.set(false);this.title.setTitle(p ? p.nome+' — CLAMA' : 'A coleção — CLAMA');}
+ private receber(p:Look|null){this.look.set(p);this.loading.set(false);this.title.setTitle(p ? p.nome+' — CLAMA' : 'A coleção — CLAMA');if(p && !this.registrado){this.registrado=true;this.http.post<void>('/api/acessos/'+encodeURIComponent(p.slug),null).subscribe({error:()=>{}});}}
  carregar(){this.reset();this.request(this.route.snapshot.paramMap.get('slug') || '').subscribe(p=>this.receber(p));}
  proximo(id:number){return ['dor','danos','culpa','resistencia','heranca','libertacao'][id % 6];}
 }
