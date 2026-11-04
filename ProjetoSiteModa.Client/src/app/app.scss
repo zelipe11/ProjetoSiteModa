@@ -164,5 +164,16 @@ header .marca .brand-tagline>span{display:inline;margin:0;font:inherit;letter-sp
 
 :is(.reality,.voices,.contact)>.page-title{margin-top:20px}
 
+.hero-intro{max-width:620px;align-self:center;text-align:center;font-size:15px;line-height:1.8;margin:0 auto 40px}
+.home-overview .section-heading{align-items:start}
+.home-overview .section-heading>p{max-width:420px;font-size:16px}
+.home-overview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 70px}
+.home-overview-grid article{border-top:1px solid var(--line);padding-top:26px}
+.home-overview-grid h3{font-size:clamp(28px,3vw,38px);line-height:1.2;margin-bottom:18px}
+.home-overview-grid p{max-width:60ch;font-size:16px;line-height:1.9;color:#615a54}
+.home-overview-links{display:flex;flex-wrap:wrap;gap:0 24px}
+.home-overview-grid .text-link{min-height:44px;padding:12px 0;margin-top:12px}
+@media(max-width:650px){.hero-intro{font-size:14px;margin-bottom:30px}.home-overview-grid{grid-template-columns:1fr;gap:32px}.home-overview-grid p,.home-overview .section-heading>p{font-size:15px}}
+
 .look-page>.text-link{margin-top:0}
 .look-page>.detail-heading{margin:clamp(20px,3vw,32px) 0 clamp(24px,4vw,40px)}
