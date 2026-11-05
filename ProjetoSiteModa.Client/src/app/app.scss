@@ -185,8 +185,10 @@ header .marca .brand-tagline>span{display:inline;margin:0;font:inherit;letter-sp
 .detail-copy summary::marker{content:""}
 .link-arrow{display:inline-block;width:.85em;height:.85em;vertical-align:baseline;fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
 .hero-intro{max-width:620px;align-self:center;text-align:center;font-size:15px;line-height:1.8;margin:0 auto 40px}
-.home-inspiration{padding-bottom:0}
-.home-inspiration-image{display:block;width:100%;height:auto}
+.hero.hero-panel{background-color:var(--accent);background-image:linear-gradient(180deg,rgba(24,9,12,.62),rgba(24,9,12,.72)),url('/images/home/painel-referencias-clama.png');background-size:cover;background-position:center;color:var(--paper)}
+.hero-panel .outline-link{background:rgba(24,9,12,.3);border-color:#ffffff90}
+.hero-panel .outline-link:hover{background:rgba(24,9,12,.6)}
+.hero-panel .asset-note{opacity:.85}
 .home-overview .section-heading{align-items:start}
 .home-overview .section-heading>p{max-width:420px;font-size:16px}
 .home-overview-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 70px}
