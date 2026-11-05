@@ -27,8 +27,7 @@ export class Editorial {
   ]
  };
 }
-@Component({selector:'clama-contato',imports:[RouterLink],templateUrl:'./contato.html'})
-export class Contact {}
+export { Contact } from './contact';
 
 @Component({selector:'clama-sobre-nos',imports:[RouterLink],templateUrl:'./sobre-nos.html'})
 export class About {}

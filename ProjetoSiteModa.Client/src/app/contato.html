@@ -1,1 +1,16 @@
-<section id="contato" class="section contact"><p class="eyebrow">07 / CONTATO</p><h1 class="page-title">Que essa conversa<br><em>continue.</em></h1><p>O canal de contato da CLAMA será disponibilizado aqui.</p><a class="text-link" routerLink="/">Voltar ao início <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M14 8H2m5-5L2 8l5 5" /></svg></a></section>
+<section id="contato" class="section contact">
+ <p class="eyebrow">07 / CONTATO</p>
+ <h1 class="page-title">Que essa conversa<br><em>continue.</em></h1>
+ <p>Quer conversar com a equipe CLAMA? Deixe seu celular e e-mail para que possamos entrar em contato.</p>
+ <form class="contact-form" (submit)="enviar($event)" [attr.aria-busy]="enviando()">
+  <label for="contato-celular">Celular com DDD</label>
+  <input id="contato-celular" name="celular" type="tel" inputmode="tel" autocomplete="tel" required maxlength="30" placeholder="(11) 99999-9999" [disabled]="enviando()" [value]="celular()" (input)="alterar('celular',$any($event.target).value)" aria-describedby="contato-privacidade">
+  <label for="contato-email">E-mail</label>
+  <input id="contato-email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="voce@exemplo.com" [disabled]="enviando()" [value]="email()" (input)="alterar('email',$any($event.target).value)" aria-describedby="contato-privacidade">
+  <div class="voice-trap" aria-hidden="true"><label for="contato-website">Website</label><input id="contato-website" name="website" tabindex="-1" autocomplete="off" [value]="website()" (input)="website.set($any($event.target).value)"></div>
+  <p id="contato-privacidade" class="contact-privacy">Ao enviar, você compartilha esses dados com a equipe CLAMA para retorno do contato. Eles serão armazenados em um espaço privado e não serão publicados no site.</p>
+  <button class="voice-submit" type="submit" [disabled]="enviando()">{{enviando() ? 'Enviando…' : 'Enviar contato'}}</button>
+  @if(sucesso()){<p class="voice-feedback" role="status">{{sucesso()}}</p>}
+  @if(erro()){<p class="voice-feedback voice-error" role="alert">{{erro()}}</p>}
+ </form>
+</section>
