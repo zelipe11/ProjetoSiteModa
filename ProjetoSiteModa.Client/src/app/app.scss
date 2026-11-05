@@ -78,6 +78,12 @@ footer .marca .wordmark{width:190px}
 .about-team h2{margin:30px 0}
 .about-team>p:not(.eyebrow){color:var(--muted);font-size:14px;max-width:440px;margin:auto}
 .about-team .text-link{margin-top:30px}
+.about-team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px;margin:44px 0;text-align:left}
+.about-team-grid article{border-top:1px solid var(--line);padding-top:24px}
+.about-team-grid h3{font-size:32px;color:var(--accent);margin-bottom:16px;line-height:1.2}
+.about-team-grid p{font-size:15px;line-height:1.85;color:#615a54}
+.about-team>p:not(.eyebrow){max-width:660px}
+@media(max-width:850px){.about-team-grid{grid-template-columns:1fr;gap:28px;margin:32px 0}.about-team-grid h3{font-size:30px}}
 @media(max-width:850px){.about-layout{grid-template-columns:1fr;gap:40px}.about-copy{max-width:none}.about-copy p{font-size:15px}.about-heading .page-title{font-size:clamp(42px,8vw,64px)}}
 
 clama-look-gallery{display:block}
