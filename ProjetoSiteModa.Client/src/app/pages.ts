@@ -19,7 +19,11 @@ export class Editorial {
    {src:'images/editorial/making-of-4.png',alt:'Partes da modelagem identificadas sobre papel na mesa',legenda:'05 — Estudo da modelagem'},
    {src:'images/editorial/making-of-5.png',alt:'Equipe trabalhando na pintura do tecido de um vestido',legenda:'06 — Pintura coletiva'},
    {src:'images/editorial/making-of-6.png',alt:'Modelagem de um corpete com fitas sobre o manequim',legenda:'07 — Modelagem no manequim'},
-   {src:'images/editorial/making-of-7.png',alt:'Tecido preto com frases de resistência feminina pintadas à mão',legenda:'08 — Palavras sobre o tecido'}
+   {src:'images/editorial/making-of-7.png',alt:'Tecido preto com frases de resistência feminina pintadas à mão',legenda:'08 — Palavras sobre o tecido'},
+   {src:'images/editorial/making-of-8.png',alt:'Equipe segurando uma impressão com retrato feminino durante a preparação das peças',legenda:'09 — Preparação da imagem'},
+   {src:'images/editorial/making-of-9.png',alt:'Detalhe do franzido em tecido vinho junto à máquina de costura',legenda:'10 — Detalhes da costura'},
+   {src:'images/editorial/making-of-10.png',alt:'Equipe cortando tecido vermelho e costurando à máquina',legenda:'11 — Corte e confecção'},
+   {src:'images/editorial/making-of-11.png',alt:'Preparação de tecido estampado com páginas de jornal sobre a mesa de trabalho',legenda:'12 — Construção da estampa'}
   ]
  };
 }
