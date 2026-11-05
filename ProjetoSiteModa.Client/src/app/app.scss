@@ -191,7 +191,7 @@ footer{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) auto;gap:24px;padding
 footer small{padding-top:16px}
 @media(max-width:850px){footer{grid-template-columns:1fr 1fr;gap:18px 24px;padding:28px 6% 18px}.footer-support{grid-column:1/-1}.footer-voice h2{font-size:24px}}
 @media(max-width:450px){.footer-voice h2{font-size:22px}.footer-brand>p{font-size:10px}}
-@media(max-width:650px){footer{padding:22px 6% 16px;gap:10px 20px}.footer-brand .marca .wordmark{width:125px}.footer-brand>p{margin-top:8px}.footer-voice h2{font-size:20px;margin-bottom:8px}.footer-voice>p{font-size:11px}.footer-voice .text-link,.footer-support .text-link{min-height:36px;padding:8px 0}footer small{padding-top:12px}}
+@media(max-width:650px){footer{padding:36px 6% 16px;gap:10px 20px}.footer-brand .marca .wordmark{width:125px}.footer-brand>p{margin-top:8px}.footer-voice h2{font-size:20px;margin-bottom:8px}.footer-voice>p{font-size:11px}.footer-voice .text-link,.footer-support .text-link{min-height:36px;padding:8px 0}footer small{padding-top:12px}}
 .detail-copy summary{list-style:none}
 .detail-copy summary::-webkit-details-marker{display:none}
 .detail-copy summary::marker{content:""}
