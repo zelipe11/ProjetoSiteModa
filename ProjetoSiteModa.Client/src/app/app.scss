@@ -164,6 +164,9 @@ header .marca .brand-tagline>span{display:inline;margin:0;font:inherit;letter-sp
 
 :is(.reality,.voices,.contact)>.page-title{margin-top:20px}
 
+.detail-copy summary{list-style:none}
+.detail-copy summary::-webkit-details-marker{display:none}
+.detail-copy summary::marker{content:""}
 .link-arrow{display:inline-block;width:.85em;height:.85em;vertical-align:baseline;fill:none;stroke:currentColor;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
 .hero-intro{max-width:620px;align-self:center;text-align:center;font-size:15px;line-height:1.8;margin:0 auto 40px}
 .home-overview .section-heading{align-items:start}
