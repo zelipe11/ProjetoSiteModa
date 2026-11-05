@@ -15,13 +15,11 @@ import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } fro
 <footer>
  <div class="footer-brand"><a class="marca" routerLink="/" aria-label="CLAMA, início"><clama-brand-mark /></a><p>Moda como expressão.<br>Memória como resistência.</p></div>
  <section class="footer-voice" aria-labelledby="footer-voice-title">
-  <p class="eyebrow">UM ESPAÇO DE ESCUTA</p>
   <h2 id="footer-voice-title">Sua voz também importa.</h2>
-  <p>Há palavras que precisam encontrar espaço. Compartilhe uma reflexão ou uma mensagem com a equipe CLAMA, no seu tempo.</p>
-  <p class="footer-voice-privacy">Sua mensagem é privada e não será publicada no site. Não pedimos nome nem contato.</p>
-  <a class="text-link" routerLink="/vozes">Compartilhe sua voz <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" /></svg></a>
+  <p>Envie uma mensagem privada à equipe CLAMA.</p>
+  <a class="text-link" routerLink="/vozes">Sua voz <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" /></svg></a>
  </section>
- <div class="footer-support"><p>Informação também é acolhimento.</p><a class="text-link" routerLink="/realidade" fragment="apoio">Encontre apoio <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" /></svg></a></div>
+ <div class="footer-support"><a class="text-link" routerLink="/realidade" fragment="apoio">Encontre apoio <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" /></svg></a></div>
  <small>CLAMA · Projeto de coleção autoral</small>
 </footer>
 `})

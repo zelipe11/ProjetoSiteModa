@@ -182,16 +182,15 @@ header .marca .brand-tagline>span{display:inline;margin:0;font:inherit;letter-sp
 @media(max-width:850px){.editorial-backstage{grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:32px;margin-top:44px;padding-top:30px}.editorial-backstage-copy h2{font-size:42px}.editorial-preview-grid{gap:20px}.editorial-preview .image-label{font-size:7px;letter-spacing:1px}}
 @media(max-width:650px){.editorial-backstage{grid-template-columns:1fr;gap:28px}.editorial-backstage-gallery{max-width:380px;margin-inline:auto}.editorial-backstage-copy .editorial-gallery-hint{margin-top:16px}.editorial-making-of .gallery-thumbnails{gap:6px}}
 @media(max-width:450px){.editorial-preview-grid{grid-template-columns:1fr}.editorial-backstage-copy>p:not(.eyebrow){font-size:15px}}
-footer{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr) minmax(0,1fr);gap:48px}
+footer{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) auto;gap:24px;padding:32px 7% 20px}
 .footer-brand .marca{display:inline-block}
-.footer-brand>p{margin-top:22px}
-.footer-voice h2{font-size:clamp(30px,3vw,40px);line-height:1.15;letter-spacing:-.5px;margin:14px 0 18px}
-.footer-voice>p:not(.eyebrow){max-width:48ch;line-height:1.8}
-.footer-voice .footer-voice-privacy{font-size:11px;opacity:.8;margin-top:14px}
-.footer-voice .text-link,.footer-support .text-link{min-height:44px;padding:12px 0;margin-top:12px}
-.footer-support{border-left:1px solid #ffffff30;padding-left:28px}
-@media(max-width:850px){footer{grid-template-columns:1fr 1fr;gap:32px}.footer-voice{grid-column:1/-1;grid-row:2;border-top:1px solid #ffffff30;padding-top:28px}.footer-support{border-left:0;padding-left:0}}
-@media(max-width:450px){footer{grid-template-columns:1fr;gap:26px}.footer-voice{grid-row:auto}.footer-support{border-top:1px solid #ffffff30;padding-top:24px}}
+.footer-brand>p{margin-top:12px;font-size:11px}
+.footer-voice h2{font-size:26px;line-height:1.15;letter-spacing:0;margin:0 0 10px}
+.footer-voice>p{font-size:12px;line-height:1.6;max-width:38ch}
+.footer-voice .text-link,.footer-support .text-link{min-height:44px;padding:12px 0;margin-top:0}
+footer small{padding-top:16px}
+@media(max-width:850px){footer{grid-template-columns:1fr 1fr;gap:18px 24px;padding:28px 6% 18px}.footer-support{grid-column:1/-1}.footer-voice h2{font-size:24px}}
+@media(max-width:450px){.footer-voice h2{font-size:22px}.footer-brand>p{font-size:10px}}
 .detail-copy summary{list-style:none}
 .detail-copy summary::-webkit-details-marker{display:none}
 .detail-copy summary::marker{content:""}
