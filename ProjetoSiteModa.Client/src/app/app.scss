@@ -212,22 +212,23 @@ footer small{padding-top:16px}
 .women-intro>p:not(.eyebrow){font-size:16px;line-height:1.85;margin-top:18px;color:#615a54;max-width:68ch}
 .women-intro .women-lead{font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;line-height:1.35;color:var(--ink)}
 .women-grid-title{font-size:30px;line-height:1.25;margin:36px 0 28px}
-.women-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 56px}
+.women-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px 56px}
 .woman-story{display:flex;flex-direction:column;align-items:start;border-top:1px solid var(--line);padding-top:24px;scroll-margin-top:28px;min-width:0}
-.woman-story>.eyebrow{color:var(--accent);letter-spacing:1.5px}
+.woman-story>.eyebrow{color:var(--accent);font-size:12px;font-weight:600;letter-spacing:1.3px;line-height:1.6}
 .woman-story h3{font-size:clamp(30px,3vw,40px);line-height:1.2;margin:12px 0 20px}
-.woman-story>p:not(.eyebrow){font-size:15px;line-height:1.85;color:#615a54;max-width:65ch;margin-bottom:16px}
-.woman-milestone{width:100%;margin-top:auto;padding:18px 20px;border-left:2px solid var(--accent);background:#e9e4dc}
-.woman-milestone span{font-size:9px;letter-spacing:1.5px;color:var(--accent)}
-.woman-milestone p{font-size:14px;line-height:1.6;margin-top:8px}
+.woman-story>p:not(.eyebrow){font-size:16px;line-height:1.85;color:#615a54;max-width:65ch;margin-bottom:16px}
+.woman-milestone{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:20px;row-gap:6px;align-items:center;width:100%;margin-top:auto;padding:18px 20px;border-left:2px solid var(--accent);background:#e9e4dc}
+.woman-milestone .milestone-year{grid-column:1;grid-row:1 / span 2;font-family:'Cormorant Garamond',Georgia,serif;font-size:42px;font-weight:400;line-height:1;color:var(--accent)}
+.woman-milestone span{grid-column:2;font-size:10px;letter-spacing:1.2px;color:var(--accent)}
+.woman-milestone p{grid-column:2;font-size:14px;line-height:1.6;margin:0}
 .woman-story .text-link{font-size:11px;line-height:1.6;min-height:44px;padding-block:12px;margin-top:6px;overflow-wrap:anywhere}
 .women-closing{margin-top:60px;border-top:1px solid var(--line);padding-top:36px;max-width:760px}
 .women-closing h3{font-size:clamp(30px,3.5vw,44px);line-height:1.2}
 .women-closing h3 em{color:var(--accent)}
 .women-closing>p:not(.eyebrow){font-size:16px;line-height:1.85;margin-top:24px;color:#615a54}
 .women-closing .eyebrow{margin-top:28px;line-height:1.8}
-@media(min-width:1100px){.women-voices.section{padding-inline:7%}.women-intro{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:64px}.women-intro>.eyebrow{grid-column:1/-1}.women-intro h2{grid-column:1;grid-row:2 / span 3;margin-bottom:0}.women-intro>p:not(.eyebrow){grid-column:2;max-width:68ch}.women-intro .women-lead{font-size:28px}.women-grid{column-gap:64px}.women-closing{max-width:none;display:grid;grid-template-columns:1fr 1fr;column-gap:64px}.women-closing>p:not(.eyebrow){margin-top:0}.women-closing .eyebrow{grid-column:1/-1}}
-@media(max-width:750px){.women-grid{grid-template-columns:1fr;gap:32px}.women-intro>p:not(.eyebrow),.women-closing>p:not(.eyebrow){font-size:15px}.women-intro .women-lead{font-size:25px}.women-grid-title{font-size:26px}.women-closing{margin-top:40px}}
+@media(min-width:1100px){.women-voices.section{padding-inline:7%}.women-intro{max-width:none;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);column-gap:48px}.women-intro>.eyebrow{grid-column:1/-1}.women-intro h2{grid-column:1;grid-row:2 / span 3;margin-bottom:0}.women-intro>p:not(.eyebrow){grid-column:2;max-width:68ch}.women-intro .women-lead{font-size:28px}.women-grid{column-gap:64px}.women-closing{max-width:none;display:grid;grid-template-columns:1fr 1fr;column-gap:64px}.women-closing>p:not(.eyebrow){margin-top:0}.women-closing .eyebrow{grid-column:1/-1}}
+@media(max-width:750px){.women-grid{grid-template-columns:1fr;gap:44px}.women-intro>p:not(.eyebrow),.women-closing>p:not(.eyebrow){font-size:15px}.women-intro .women-lead{font-size:25px}.women-grid-title{font-size:26px}.women-closing{margin-top:40px}}
 .women-intro>p.women-lead{font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:500;line-height:1.7;color:#252122}
 @media(max-width:750px){.women-intro>p.women-lead{font-size:16px}}
 .detail-copy summary{list-style:none}
