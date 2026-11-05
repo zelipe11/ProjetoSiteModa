@@ -6,7 +6,7 @@ import { Look } from './look';
 export class Manifesto {}
 @Component({selector:'clama-historia',imports:[RouterLink],templateUrl:'./historia.html'})
 export class History {}
-@Component({selector:'clama-realidade',imports:[],templateUrl:'./realidade.html'})
+@Component({selector:'clama-realidade',imports:[RouterLink],templateUrl:'./realidade.html'})
 export class Reality {}
 @Component({selector:'clama-editorial',imports:[LookGallery],templateUrl:'./editorial.html'})
 export class Editorial {

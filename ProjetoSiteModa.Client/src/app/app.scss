@@ -206,6 +206,29 @@ footer small{padding-top:16px}
 .contact-form .contact-count{font-size:10px;text-align:right;color:var(--muted);margin-top:6px}
 .contact-form .contact-privacy{font-size:11px;line-height:1.7;color:var(--muted);margin:20px 0}
 .contact-form .voice-submit{background:var(--accent);border-color:var(--accent)}
+.women-voices{max-width:1440px;margin-inline:auto}
+.women-intro{max-width:760px}
+.women-intro h2{margin:24px 0 28px}
+.women-intro>p:not(.eyebrow){font-size:16px;line-height:1.85;margin-top:18px;color:#615a54;max-width:68ch}
+.women-intro .women-lead{font-family:'Cormorant Garamond',Georgia,serif;font-size:28px;line-height:1.35;color:var(--ink)}
+.women-index{display:flex;flex-wrap:wrap;gap:10px 24px;border-block:1px solid var(--line);margin:36px 0 48px;padding:12px 0}
+.women-index a{display:inline-flex;align-items:center;min-height:44px;font-size:12px;color:var(--accent)}
+.women-grid-title{font-size:30px;line-height:1.25;margin-bottom:28px}
+.women-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 56px}
+.woman-story{display:flex;flex-direction:column;align-items:start;border-top:1px solid var(--line);padding-top:24px;scroll-margin-top:28px;min-width:0}
+.woman-story>.eyebrow{color:var(--accent);letter-spacing:1.5px}
+.woman-story h3{font-size:clamp(30px,3vw,40px);line-height:1.2;margin:12px 0 20px}
+.woman-story>p:not(.eyebrow){font-size:15px;line-height:1.85;color:#615a54;max-width:65ch;margin-bottom:16px}
+.woman-milestone{width:100%;margin-top:auto;padding:18px 20px;border-left:2px solid var(--accent);background:#e9e4dc}
+.woman-milestone span{font-size:9px;letter-spacing:1.5px;color:var(--accent)}
+.woman-milestone p{font-size:14px;line-height:1.6;margin-top:8px}
+.woman-story .text-link{font-size:11px;line-height:1.6;min-height:44px;padding-block:12px;margin-top:6px;overflow-wrap:anywhere}
+.women-closing{margin-top:60px;border-top:1px solid var(--line);padding-top:36px;max-width:760px}
+.women-closing h3{font-size:clamp(30px,3.5vw,44px);line-height:1.2}
+.women-closing h3 em{color:var(--accent)}
+.women-closing>p:not(.eyebrow){font-size:16px;line-height:1.85;margin-top:24px;color:#615a54}
+.women-closing .eyebrow{margin-top:28px;line-height:1.8}
+@media(max-width:750px){.women-grid{grid-template-columns:1fr;gap:32px}.women-index{margin-bottom:32px;gap:4px 22px}.women-intro>p:not(.eyebrow),.women-closing>p:not(.eyebrow){font-size:15px}.women-intro .women-lead{font-size:25px}.women-grid-title{font-size:26px}.women-closing{margin-top:40px}}
 .detail-copy summary{list-style:none}
 .detail-copy summary::-webkit-details-marker{display:none}
 .detail-copy summary::marker{content:""}
