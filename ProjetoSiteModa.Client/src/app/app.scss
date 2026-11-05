@@ -166,8 +166,10 @@ header .marca .brand-tagline>span{display:inline;margin:0;font:inherit;letter-sp
 
 :is(.reality,.voices,.contact)>.page-title{margin-top:20px}
 
-.editorial-process.editorial-process-photo{height:auto;background:transparent}
-.editorial-process-photo img{display:block;width:100%;height:auto}
+.editorial-process.editorial-making-of{height:auto;background:transparent}
+.editorial-making-of .look-gallery{grid-template-columns:minmax(0,1fr);gap:12px}
+.editorial-making-of .gallery-thumbnails{flex-direction:row;overflow-x:auto;max-width:100%;padding:2px 0 8px}
+.editorial-making-of .gallery-thumb{flex:0 0 48px;width:48px}
 .detail-copy summary{list-style:none}
 .detail-copy summary::-webkit-details-marker{display:none}
 .detail-copy summary::marker{content:""}
