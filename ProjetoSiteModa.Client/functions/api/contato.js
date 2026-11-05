@@ -44,9 +44,11 @@ export async function onRequest({ request, env }) {
     payload = JSON.parse(body);
   } catch { return response(400, 'Não foi possível ler a mensagem.'); }
   if (!payload || typeof payload !== 'object' || Array.isArray(payload)) return response(400, 'Envio inválido.');
-  const { id, celular, email, website } = payload;
+  const { id, celular, email, nome, mensagem, website } = payload;
   if (typeof id !== 'string' || !UUID.test(id)) return response(400, 'Identificador de envio inválido.');
   if (website) return response(400, 'Envio inválido.');
+  if (typeof nome !== 'string' || nome.trim().length < 2 || nome.trim().length > 120) return response(400, 'Informe seu nome, entre 2 e 120 caracteres.');
+  if (typeof mensagem !== 'string' || mensagem.trim().length < 3 || mensagem.trim().length > 2000) return response(400, 'Escreva uma mensagem entre 3 e 2.000 caracteres.');
   if (typeof celular !== 'string' || celular.length > 30 || !/^[+\d\s().-]+$/.test(celular) ||
       !/^(?:55)?[1-9]\d9\d{8}$/.test(celular.replace(/\D/g, ''))) {
     return response(400, 'Informe um celular válido com DDD.');
@@ -57,8 +59,8 @@ export async function onRequest({ request, env }) {
   if (!env?.VOZES_DB) return response(503, unavailable);
   try {
     const result = await env.VOZES_DB.prepare(
-      'INSERT INTO contatos (id, celular, email, criado_em) VALUES (?, ?, ?, ?) ON CONFLICT(id) DO NOTHING'
-    ).bind(id, celular.replace(/\D/g, ''), email.trim(), new Date(Date.now() - 3 * 60 * 60 * 1000).toISOString().replace('Z', '-03:00')).run();
+      'INSERT INTO contatos (id, celular, email, nome, mensagem, criado_em) VALUES (?, ?, ?, ?, ?, ?) ON CONFLICT(id) DO NOTHING'
+    ).bind(id, celular.replace(/\D/g, ''), email.trim(), nome.trim(), mensagem.trim(), new Date(Date.now() - 3 * 60 * 60 * 1000).toISOString().replace('Z', '-03:00')).run();
     if (!result.success) return response(503, unavailable);
   } catch {
     // Não registrar dados de contato nem detalhes do banco nos logs públicos da aplicação.
