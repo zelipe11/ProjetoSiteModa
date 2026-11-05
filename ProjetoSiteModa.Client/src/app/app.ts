@@ -1,6 +1,9 @@
 import { BrandMark } from './brand-mark';
-import { Component, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { Component, inject, signal } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { filter, map, distinctUntilChanged } from 'rxjs';
+import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 @Component({selector:'app-root', imports:[RouterOutlet, RouterLink, RouterLinkActive, BrandMark], template: `
 <button class="skip" type="button" (click)="conteudo.focus()">Pular para o conteúdo</button>
 <header><a class="marca" routerLink="/" (click)="menu.set(false)" aria-label="CLAMA, início"><clama-brand-mark /><span class="brand-tagline"><span>MODA</span><span aria-hidden="true">·</span><span>MEMÓRIA</span><span aria-hidden="true">·</span><span>RESISTÊNCIA</span></span></a>
@@ -12,6 +15,20 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 <footer><a class="marca" routerLink="/" aria-label="CLAMA, início"><clama-brand-mark /></a><p>Moda como expressão.<br>Memória como resistência.</p><a routerLink="/realidade" fragment="apoio">Encontre apoio <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" /></svg></a><small>CLAMA · Projeto de coleção autoral</small></footer>
 `})
 export class App {
+ private readonly router = inject(Router);
+ private readonly http = inject(HttpClient);
+ constructor(){
+  this.router.events.pipe(
+   filter((event): event is NavigationEnd => event instanceof NavigationEnd),
+   map(event => event.urlAfterRedirects.split(/[?#]/)[0].replace(/^\/+|\/+$/g,'')),
+   distinctUntilChanged(),
+   takeUntilDestroyed()
+  ).subscribe(slug => {
+   if(this.links.some(item => item.id === slug)){
+    this.http.post<void>('/api/abas/'+encodeURIComponent(slug),null).subscribe({error:()=>{}});
+   }
+  });
+ }
  readonly menu = signal(false);
  readonly links = [{id:'colecao',nome:'A coleção'},{id:'manifesto',nome:'Manifesto'},{id:'historia',nome:'Nossa história'},{id:'realidade',nome:'Dados e realidade'},{id:'editorial',nome:'Editorial'},{id:'vozes',nome:'Sua voz'},{id:'sobre-nos',nome:'Sobre Nós'},{id:'contato',nome:'Contato'}];
 }

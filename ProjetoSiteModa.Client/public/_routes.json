@@ -1,1 +1,1 @@
-{"version":1,"include":["/api/vozes","/api/acessos/*"],"exclude":[]}
+{"version":1,"include":["/api/vozes","/api/acessos/*","/api/abas/*"],"exclude":[]}
