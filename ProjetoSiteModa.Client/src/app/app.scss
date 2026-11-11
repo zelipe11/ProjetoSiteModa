@@ -255,3 +255,10 @@ footer small{padding-top:16px}
 
 .look-page>.text-link{margin-top:0}
 .look-page>.detail-heading{margin:clamp(20px,3vw,32px) 0 clamp(24px,4vw,40px)}
+@media(min-width:801px){
+ .section.look-page{padding-top:20px}
+ .look-page>.detail-heading{margin:12px 0 20px}
+ .look-page .detail-heading h1{font-size:clamp(64px,9vh,88px);line-height:1.1}
+ .look-page .detail-heading>p:last-child{font-size:22px;line-height:1.5;margin-top:8px}
+ .detail-product{grid-template-columns:clamp(280px,calc(75svh - 185px),520px) minmax(260px,380px);justify-content:center}
+}
