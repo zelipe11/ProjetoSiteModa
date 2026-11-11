@@ -20,6 +20,12 @@
         "alt": "Vestido Dor, vista de costas, isolada em fundo branco",
         "legenda": "Costas"
       }
+    ],
+    "pecas": [
+      {
+        "nome": "Vestido Dor",
+        "preco": 10500
+      }
     ]
   },
   {
@@ -48,6 +54,12 @@
         "enquadramento": "direita",
         "largura": 1377,
         "altura": 1142
+      }
+    ],
+    "pecas": [
+      {
+        "nome": "Vestido Danos",
+        "preco": 3800
       }
     ]
   },
@@ -78,6 +90,16 @@
         "largura": 742,
         "altura": 780
       }
+    ],
+    "pecas": [
+      {
+        "nome": "Corset Culpa",
+        "preco": 4600
+      },
+      {
+        "nome": "Calça Culpa",
+        "preco": 2700
+      }
     ]
   },
   {
@@ -100,6 +122,16 @@
         "ajuste": "0 1%",
         "alt": "Quarto vestido, Resistência: vista de costas com a saia completa",
         "legenda": "Costas"
+      }
+    ],
+    "pecas": [
+      {
+        "nome": "Corset Resistência",
+        "preco": 2800
+      },
+      {
+        "nome": "Saia Resistência",
+        "preco": 4100
       }
     ]
   },
@@ -130,6 +162,12 @@
         "largura": 1254,
         "altura": 1254
       }
+    ],
+    "pecas": [
+      {
+        "nome": "Vestido Herança",
+        "preco": 5500
+      }
     ]
   },
   {
@@ -152,6 +190,20 @@
         "ajuste": "0 -1%",
         "alt": "Sexto vestido, Libertação: vista de costas",
         "legenda": "Costas"
+      }
+    ],
+    "pecas": [
+      {
+        "nome": "Casaco Libertação",
+        "preco": 6500
+      },
+      {
+        "nome": "Corset Libertação",
+        "preco": 3200
+      },
+      {
+        "nome": "Saia Libertação",
+        "preco": 2300
       }
     ]
   }

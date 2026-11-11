@@ -1,9 +1,10 @@
+import { LookPrices } from './look-prices';
 import { LookGallery } from './look-gallery';
 import { Component, inject, signal } from '@angular/core';
 import { LooksService } from './looks.service';
 import { RouterLink } from '@angular/router';
 import { Look } from './look';
-@Component({selector:'clama-collection',imports:[RouterLink, LookGallery],templateUrl:'./collection.html'})
+@Component({selector:'clama-collection',imports:[RouterLink, LookGallery, LookPrices],templateUrl:'./collection.html'})
 export class Collection {
  private readonly catalogo = inject(LooksService);
  readonly looks = signal<Look[]>([]);
