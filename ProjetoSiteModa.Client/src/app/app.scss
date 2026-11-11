@@ -107,6 +107,11 @@ clama-look-gallery{display:block}
 .gallery-thumb:hover{border-color:var(--accent)}
 .gallery-thumb.selected{border:2px solid var(--accent);padding:2px;box-shadow:0 0 0 2px #6825261a}
 .detail-gallery{max-width:620px;margin:0 auto}
+.detail-product{display:grid;grid-template-columns:minmax(0,620px) minmax(260px,1fr);gap:40px;align-items:start;max-width:1040px;margin:0 auto}
+.detail-product-images{min-width:0}
+.detail-product-prices{padding-top:12px}
+.detail-product-prices h2{font-size:32px;line-height:1.2;letter-spacing:0}
+@media(max-width:800px){.detail-product{grid-template-columns:minmax(0,1fr);gap:24px}.detail-product-prices{padding-top:0}}
 .look-gallery.compact{grid-template-columns:minmax(0,1fr);gap:0}
 .compact .gallery-stage{border-radius:9px}
 @media(max-width:650px){

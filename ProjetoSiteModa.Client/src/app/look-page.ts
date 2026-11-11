@@ -15,9 +15,13 @@ import { Look } from './look';
 @if(error()){<h1>{{notFound() ? 'Look não encontrado.' : 'Não foi possível carregar o look.'}}</h1><p>{{notFound() ? 'Explore os seis momentos da coleção.' : 'Verifique sua conexão e tente novamente.'}}</p>@if(!notFound()){<button class="outline-link dark" (click)="carregar()">Tentar novamente</button>}}
 @if(look(); as p){
 <div class="detail-heading"><p class="eyebrow">A COLEÇÃO / 0{{p.id}} DE 06</p><h1>{{p.nome}}</h1><p>{{p.frase}}</p></div>
+<div class="detail-product">
+<div class="detail-product-images">
 @if(p.imagens?.length){<div class="detail-gallery"><clama-look-gallery [look]="p" /></div>}@else{<div class="detail-photos"><figure><div class="image-space" [style.--look-color]="p.cor"><span class="image-label">FOTOGRAFIA FRONTAL A INSERIR</span></div><figcaption>01 — Frente</figcaption></figure><figure><div class="image-space" [style.--look-color]="p.cor"><span class="image-label">FOTOGRAFIA TRASEIRA A INSERIR</span></div><figcaption>02 — Costas</figcaption></figure></div>
 }
-<clama-look-prices [pecas]="p.pecas" />
+</div>
+@if(p.pecas?.length){<aside class="detail-product-prices" aria-label="Preços das peças"><h2>Peças e preços</h2><clama-look-prices [pecas]="p.pecas" /></aside>}
+</div>
 <div class="detail-copy"><div><p class="eyebrow">A IDEIA POR TRÁS DA PEÇA</p><h2>Uma forma de<br><em>dizer.</em></h2></div><div><h3>Conceito e inspiração</h3><p>{{p.conceito}}</p><h3>Significado simbólico</h3><p>{{p.simbolismo}}</p><p class="editor-note">Leitura conceitual proposta para o site, sujeita à validação da equipe CLAMA.</p><details><summary>Materiais e técnicas</summary><p>A ficha técnica desta peça será incluída pela equipe da coleção.</p></details><details><summary>Detalhes da construção</summary><p>Os detalhes de modelagem, acabamentos e processo serão incluídos junto às imagens da peça.</p></details></div></div>
 <div class="look-next"><a routerLink="/colecao">Todos os looks</a><a [routerLink]="['/colecao',proximo(p.id)]">{{p.id === 6 ? 'Voltar a Dor' : 'Próximo momento'}} <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h12M9 3l5 5-5 5" /></svg></a></div>
 }
