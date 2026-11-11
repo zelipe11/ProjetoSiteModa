@@ -5,11 +5,12 @@ import { Peca } from './look';
  selector: 'clama-look-prices',
  template: `@if(pecas()?.length){<dl aria-label="Preços das peças">@for(peca of pecas(); track peca.nome){<div><dt>{{peca.nome}}</dt><dd>{{formatar(peca.preco)}}</dd></div>}</dl>}`,
  styles: [`
-  :host{display:block}
+  :host{display:block;container-type:inline-size}
   dl{margin:20px 0 0;padding:0;border-top:1px solid var(--line)}
-  dl>div{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.6}
+  dl>div{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:13px;line-height:1.6}
   dt{color:var(--muted)}
   dd{margin:0;white-space:nowrap;font-variant-numeric:tabular-nums}
+  @container(max-width:260px){dl>div{grid-template-columns:minmax(0,1fr)}}
  `]
 })
 export class LookPrices {
