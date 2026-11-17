@@ -25,6 +25,18 @@
         "srcset": "images/clama/clama-22-640.webp 640w, images/clama/clama-22-1600.webp 1600w",
         "alt": "Look Dor da coleção CLAMA: movimento da saia",
         "legenda": "Movimento da saia"
+      },
+      {
+        "src": "images/looks/dor-frente.png",
+        "ajuste": "0 3.5%",
+        "alt": "Croqui: Vestido Dor, vista de frente, isolada em fundo branco",
+        "legenda": "Croqui · Frente"
+      },
+      {
+        "src": "images/looks/dor-costas.png",
+        "ajuste": "0 2.7%",
+        "alt": "Croqui: Vestido Dor, vista de costas, isolada em fundo branco",
+        "legenda": "Croqui · Costas"
       }
     ],
     "pecas": [
@@ -54,6 +66,24 @@
         "srcset": "images/clama/clama-15-640.webp 640w, images/clama/clama-15-1600.webp 1600w",
         "alt": "Look Danos da coleção CLAMA: silhueta em preto e branco",
         "legenda": "Silhueta em preto e branco"
+      },
+      {
+        "src": "images/looks/danos-frente-costas.jpg",
+        "ajuste": "-4% 0",
+        "alt": "Croqui: Segundo vestido, Danos: vista de frente",
+        "legenda": "Croqui · Frente",
+        "enquadramento": "esquerda",
+        "largura": 1377,
+        "altura": 1142
+      },
+      {
+        "src": "images/looks/danos-frente-costas.jpg",
+        "ajuste": "3% 0",
+        "alt": "Croqui: Segundo vestido, Danos: vista de costas",
+        "legenda": "Croqui · Costas",
+        "enquadramento": "direita",
+        "largura": 1377,
+        "altura": 1142
       }
     ],
     "pecas": [
@@ -83,6 +113,24 @@
         "srcset": "images/clama/clama-14-640.webp 640w, images/clama/clama-14-1600.webp 1600w",
         "alt": "Look Culpa da coleção CLAMA: composição editorial",
         "legenda": "Composição editorial"
+      },
+      {
+        "src": "images/looks/culpa-frente-costas.jpg",
+        "ajuste": "-2.4% 0",
+        "alt": "Croqui: Terceiro vestido, Culpa: vista de frente",
+        "legenda": "Croqui · Frente",
+        "enquadramento": "esquerda",
+        "largura": 742,
+        "altura": 780
+      },
+      {
+        "src": "images/looks/culpa-frente-costas.jpg",
+        "ajuste": "2.4% 0",
+        "alt": "Croqui: Terceiro vestido, Culpa: vista de costas",
+        "legenda": "Croqui · Costas",
+        "enquadramento": "direita",
+        "largura": 742,
+        "altura": 780
       }
     ],
     "pecas": [
@@ -122,6 +170,18 @@
         "srcset": "images/clama/clama-28-640.webp 640w, images/clama/clama-28-1600.webp 1600w",
         "alt": "Look Resistência da coleção CLAMA: retrato em preto e branco",
         "legenda": "Retrato em preto e branco"
+      },
+      {
+        "src": "images/looks/resistencia-frente.png",
+        "ajuste": "0 1%",
+        "alt": "Croqui: Quarto vestido, Resistência: vista de frente com a saia completa",
+        "legenda": "Croqui · Frente"
+      },
+      {
+        "src": "images/looks/resistencia-costas.png",
+        "ajuste": "0 1%",
+        "alt": "Croqui: Quarto vestido, Resistência: vista de costas com a saia completa",
+        "legenda": "Croqui · Costas"
       }
     ],
     "pecas": [
@@ -161,6 +221,24 @@
         "srcset": "images/clama/clama-5-640.webp 640w, images/clama/clama-5-1600.webp 1600w",
         "alt": "Look Herança da coleção CLAMA: retrato e memória",
         "legenda": "Retrato e memória"
+      },
+      {
+        "src": "images/looks/heranca-frente-costas.jpg",
+        "ajuste": "1% 0",
+        "alt": "Croqui: Quinto vestido, Herança: vista de frente",
+        "legenda": "Croqui · Frente",
+        "enquadramento": "esquerda",
+        "largura": 1254,
+        "altura": 1254
+      },
+      {
+        "src": "images/looks/heranca-frente-costas.jpg",
+        "ajuste": "-1% 0",
+        "alt": "Croqui: Quinto vestido, Herança: vista de costas",
+        "legenda": "Croqui · Costas",
+        "enquadramento": "direita",
+        "largura": 1254,
+        "altura": 1254
       }
     ],
     "pecas": [
@@ -196,6 +274,18 @@
         "srcset": "images/clama/clama-16-640.webp 640w, images/clama/clama-16-1600.webp 1600w",
         "alt": "Look Libertação da coleção CLAMA: manifesto nas costas",
         "legenda": "Manifesto nas costas"
+      },
+      {
+        "src": "images/looks/libertacao-frente.png",
+        "ajuste": "0 0",
+        "alt": "Croqui: Sexto vestido, Libertação: vista de frente",
+        "legenda": "Croqui · Frente"
+      },
+      {
+        "src": "images/looks/libertacao-costas.png",
+        "ajuste": "0 -1%",
+        "alt": "Croqui: Sexto vestido, Libertação: vista de costas",
+        "legenda": "Croqui · Costas"
       }
     ],
     "pecas": [
