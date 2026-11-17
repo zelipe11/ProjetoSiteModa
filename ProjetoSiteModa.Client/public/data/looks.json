@@ -205,22 +205,22 @@
     "cor": "#c5b9ad",
     "imagens": [
       {
-        "src": "images/clama/clama-23-1600.webp",
-        "srcset": "images/clama/clama-23-640.webp 640w, images/clama/clama-23-1600.webp 1600w",
-        "alt": "Look Herança da coleção CLAMA: rosas e silhueta",
-        "legenda": "Rosas e silhueta"
+        "src": "images/clama/clama-7-1600.webp",
+        "srcset": "images/clama/clama-7-640.webp 640w, images/clama/clama-7-1600.webp 1600w",
+        "alt": "Look Herança da coleção CLAMA: retrato e alfaiataria",
+        "legenda": "Retrato e alfaiataria"
       },
       {
-        "src": "images/clama/clama-1-1600.webp",
-        "srcset": "images/clama/clama-1-640.webp 640w, images/clama/clama-1-1600.webp 1600w",
-        "alt": "Look Herança da coleção CLAMA: composição com capa",
-        "legenda": "Composição com capa"
+        "src": "images/clama/clama-8-1600.webp",
+        "srcset": "images/clama/clama-8-640.webp 640w, images/clama/clama-8-1600.webp 1600w",
+        "alt": "Look Herança da coleção CLAMA: composição editorial",
+        "legenda": "Composição editorial"
       },
       {
-        "src": "images/clama/clama-5-1600.webp",
-        "srcset": "images/clama/clama-5-640.webp 640w, images/clama/clama-5-1600.webp 1600w",
-        "alt": "Look Herança da coleção CLAMA: retrato e memória",
-        "legenda": "Retrato e memória"
+        "src": "images/clama/clama-16-1600.webp",
+        "srcset": "images/clama/clama-16-640.webp 640w, images/clama/clama-16-1600.webp 1600w",
+        "alt": "Look Herança da coleção CLAMA: manifesto nas costas",
+        "legenda": "Manifesto nas costas"
       },
       {
         "src": "images/looks/heranca-frente-costas.jpg",
@@ -258,22 +258,22 @@
     "cor": "#9b8976",
     "imagens": [
       {
-        "src": "images/clama/clama-7-1600.webp",
-        "srcset": "images/clama/clama-7-640.webp 640w, images/clama/clama-7-1600.webp 1600w",
-        "alt": "Look Libertação da coleção CLAMA: retrato e alfaiataria",
-        "legenda": "Retrato e alfaiataria"
+        "src": "images/clama/clama-23-1600.webp",
+        "srcset": "images/clama/clama-23-640.webp 640w, images/clama/clama-23-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: rosas e silhueta",
+        "legenda": "Rosas e silhueta"
       },
       {
-        "src": "images/clama/clama-8-1600.webp",
-        "srcset": "images/clama/clama-8-640.webp 640w, images/clama/clama-8-1600.webp 1600w",
-        "alt": "Look Libertação da coleção CLAMA: composição editorial",
-        "legenda": "Composição editorial"
+        "src": "images/clama/clama-1-1600.webp",
+        "srcset": "images/clama/clama-1-640.webp 640w, images/clama/clama-1-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: composição com capa",
+        "legenda": "Composição com capa"
       },
       {
-        "src": "images/clama/clama-16-1600.webp",
-        "srcset": "images/clama/clama-16-640.webp 640w, images/clama/clama-16-1600.webp 1600w",
-        "alt": "Look Libertação da coleção CLAMA: manifesto nas costas",
-        "legenda": "Manifesto nas costas"
+        "src": "images/clama/clama-5-1600.webp",
+        "srcset": "images/clama/clama-5-640.webp 640w, images/clama/clama-5-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: retrato e memória",
+        "legenda": "Retrato e memória"
       },
       {
         "src": "images/looks/libertacao-frente.png",
