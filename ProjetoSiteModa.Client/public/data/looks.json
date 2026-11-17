@@ -205,12 +205,6 @@
     "cor": "#c5b9ad",
     "imagens": [
       {
-        "src": "images/clama/clama-7-1600.webp",
-        "srcset": "images/clama/clama-7-640.webp 640w, images/clama/clama-7-1600.webp 1600w",
-        "alt": "Look Herança da coleção CLAMA: retrato e alfaiataria",
-        "legenda": "Retrato e alfaiataria"
-      },
-      {
         "src": "images/clama/clama-8-1600.webp",
         "srcset": "images/clama/clama-8-640.webp 640w, images/clama/clama-8-1600.webp 1600w",
         "alt": "Look Herança da coleção CLAMA: composição editorial",
@@ -274,6 +268,12 @@
         "srcset": "images/clama/clama-5-640.webp 640w, images/clama/clama-5-1600.webp 1600w",
         "alt": "Look Libertação da coleção CLAMA: retrato e memória",
         "legenda": "Retrato e memória"
+      },
+      {
+        "src": "images/clama/clama-7-1600.webp",
+        "srcset": "images/clama/clama-7-640.webp 640w, images/clama/clama-7-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: costas do casaco com retrato feminino",
+        "legenda": "Costas do casaco"
       },
       {
         "src": "images/looks/libertacao-frente.png",
