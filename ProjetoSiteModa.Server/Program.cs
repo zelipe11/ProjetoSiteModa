@@ -14,6 +14,6 @@ app.MapFallback("/api/{**path}", () => Results.NotFound());
 app.MapFallbackToFile("index.html");
 app.Run();
 record Look(int Id, string Slug, string Nome, string Frase, string Conceito, string Simbolismo, string Cor, ImagemLook[]? Imagens = null, Peca[]? Pecas = null);
-record ImagemLook(string Src, string Alt, string Legenda, string? Enquadramento = null, int? Largura = null, int? Altura = null);
+record ImagemLook(string Src, string Alt, string Legenda, string? Enquadramento = null, int? Largura = null, int? Altura = null, string? Srcset = null);
 
 record Peca(string Nome, decimal Preco);

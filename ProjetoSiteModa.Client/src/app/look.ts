@@ -1,5 +1,6 @@
 export interface LookImage {
  src: string;
+ srcset?: string;
  alt: string;
  legenda: string;
  enquadramento?: 'esquerda' | 'direita';

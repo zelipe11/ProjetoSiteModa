@@ -1,9 +1,26 @@
-<section class="hero hero-panel" aria-labelledby="hero-title">
- <div class="hero-meta"><span>COLEÇÃO AUTORAL</span><span>UM CORPO. MUITAS VOZES.</span></div>
- <div class="hero-center"><p class="eyebrow">MODA · MEMÓRIA · RESISTÊNCIA</p><h1 id="hero-title"><clama-brand-mark /></h1><p class="hero-phrase">O silêncio nunca foi consentimento.</p><a class="outline-link" routerLink="/colecao">EXPLORE A COLEÇÃO <span><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h12M9 3l5 5-5 5" /></svg></span></a></div>
- <p class="hero-intro">Uma coleção autoral de moda que transforma memória, resistência feminina e enfrentamento à violência de gênero em expressão.</p>
- <div class="hero-bottom"><span>Quando tentaram silenciar nossas vozes,<br>transformamos nossos corpos em manifesto.</span><span class="asset-note">IDENTIDADE AUTORAL · CLAMA</span></div>
+<section class="hero hero-editorial" aria-labelledby="hero-title">
+ <div class="hero-story">
+  <div class="hero-meta"><span>COLEÇÃO AUTORAL</span><span>MODA COM PROPÓSITO</span></div>
+  <div class="hero-center"><p class="eyebrow">UM CORPO. MUITAS VOZES.</p><h1 id="hero-title"><clama-brand-mark /></h1><p class="hero-phrase">O silêncio nunca<br>foi consentimento.</p><p class="hero-intro">Memória, resistência e expressão feminina em seis criações autorais.</p><a class="outline-link" routerLink="/colecao">EXPLORE A COLEÇÃO <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h12M9 3l5 5-5 5" /></svg></a></div>
+  <div class="hero-bottom"><span>Quando tentaram silenciar nossas vozes,<br>transformamos nossos corpos em manifesto.</span></div>
+ </div>
+ <figure class="hero-photograph"><img src="images/clama/clama-19-1600.webp" srcset="images/clama/clama-19-640.webp 640w, images/clama/clama-19-1600.webp 1600w" sizes="(max-width: 750px) 100vw, 54vw" width="1600" height="2400" alt="Modelos reunidas com os looks da coleção CLAMA, em um editorial ao ar livre" fetchpriority="high" decoding="async"><figcaption>CLAMA <span>MODA · MEMÓRIA · RESISTÊNCIA</span></figcaption></figure>
 </section>
+@if (looks().length) {
+<section class="section home-collection" aria-labelledby="home-collection-title">
+ <div class="section-top"><p class="eyebrow">A COLEÇÃO EM CENA</p><span>SEIS LOOKS. UMA TRAJETÓRIA.</span></div>
+ <div class="section-heading"><h2 id="home-collection-title">Histórias vestidas<br><em>de significado.</em></h2><p>Da dor à libertação, cada criação carrega uma mensagem. Conheça as peças pelo olhar do nosso editorial.</p></div>
+ <div class="home-looks-grid">
+ @for (look of looks(); track look.id) {
+  <a class="home-look" [routerLink]="['/colecao', look.slug]">
+   <figure><img [src]="look.imagens?.[0]?.src" [attr.srcset]="look.imagens?.[0]?.srcset" sizes="(max-width: 650px) 44vw, 30vw" [alt]="look.imagens?.[0]?.alt" width="1600" height="2400" loading="lazy" decoding="async"><span class="home-look-index">0{{look.id}} / 06</span></figure>
+   <div class="home-look-heading"><h3>{{look.nome}}</h3><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" /></svg></div><p>{{look.frase}}</p>
+  </a>
+ }
+ </div>
+ <a class="outline-link dark" routerLink="/colecao">CONHEÇA TODAS AS PEÇAS <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h12M9 3l5 5-5 5" /></svg></a>
+</section>
+}
 <section class="section home-overview" aria-labelledby="overview-title">
  <div class="section-top"><p class="eyebrow">CONHEÇA A CLAMA</p><span>MODA COM PROPÓSITO</span></div>
  <div class="section-heading"><h2 id="overview-title">Uma coleção.<br><em>Muitas histórias para ouvir.</em></h2><p>Criada como Trabalho de Conclusão de Curso em Design de Moda, a CLAMA convida você a conhecer as peças, entender suas mensagens e refletir sobre a realidade das mulheres.</p></div>

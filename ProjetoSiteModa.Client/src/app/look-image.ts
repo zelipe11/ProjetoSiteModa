@@ -10,7 +10,7 @@ let nextClipId = 0;
   <image [attr.clip-path]="'url(#' + clipId + ')'" [attr.href]="image.src" [attr.width]="image.largura" [attr.height]="image.altura" />
  </svg>
 }@else{
- <img [src]="image.src" [style.translate]="image.ajuste" [alt]="decorative ? '' : image.alt" loading="eager" decoding="async">
+ <img [src]="image.src" [attr.srcset]="image.srcset" sizes="(max-width: 650px) 85vw, 600px" [style.translate]="image.ajuste" [alt]="decorative ? '' : image.alt" [loading]="decorative ? 'lazy' : 'eager'" decoding="async">
 }
 `})
 export class LookImageView {

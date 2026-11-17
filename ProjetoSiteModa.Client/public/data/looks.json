@@ -9,16 +9,22 @@
     "cor": "#b7b1aa",
     "imagens": [
       {
-        "src": "images/looks/dor-frente.png",
-        "ajuste": "0 3.5%",
-        "alt": "Vestido Dor, vista de frente, isolada em fundo branco",
-        "legenda": "Frente"
+        "src": "images/clama/clama-12-1600.webp",
+        "srcset": "images/clama/clama-12-640.webp 640w, images/clama/clama-12-1600.webp 1600w",
+        "alt": "Look Dor da coleção CLAMA: silhueta completa",
+        "legenda": "Silhueta completa"
       },
       {
-        "src": "images/looks/dor-costas.png",
-        "ajuste": "0 2.7%",
-        "alt": "Vestido Dor, vista de costas, isolada em fundo branco",
-        "legenda": "Costas"
+        "src": "images/clama/clama-11-1600.webp",
+        "srcset": "images/clama/clama-11-640.webp 640w, images/clama/clama-11-1600.webp 1600w",
+        "alt": "Look Dor da coleção CLAMA: detalhes do corpete e das rosas",
+        "legenda": "Detalhes do corpete e das rosas"
+      },
+      {
+        "src": "images/clama/clama-22-1600.webp",
+        "srcset": "images/clama/clama-22-640.webp 640w, images/clama/clama-22-1600.webp 1600w",
+        "alt": "Look Dor da coleção CLAMA: movimento da saia",
+        "legenda": "Movimento da saia"
       }
     ],
     "pecas": [
@@ -38,22 +44,16 @@
     "cor": "#887464",
     "imagens": [
       {
-        "src": "images/looks/danos-frente-costas.jpg",
-        "ajuste": "-4% 0",
-        "alt": "Segundo vestido, Danos: vista de frente",
-        "legenda": "Frente",
-        "enquadramento": "esquerda",
-        "largura": 1377,
-        "altura": 1142
+        "src": "images/clama/clama-27-1600.webp",
+        "srcset": "images/clama/clama-27-640.webp 640w, images/clama/clama-27-1600.webp 1600w",
+        "alt": "Look Danos da coleção CLAMA: retrato editorial",
+        "legenda": "Retrato editorial"
       },
       {
-        "src": "images/looks/danos-frente-costas.jpg",
-        "ajuste": "3% 0",
-        "alt": "Segundo vestido, Danos: vista de costas",
-        "legenda": "Costas",
-        "enquadramento": "direita",
-        "largura": 1377,
-        "altura": 1142
+        "src": "images/clama/clama-15-1600.webp",
+        "srcset": "images/clama/clama-15-640.webp 640w, images/clama/clama-15-1600.webp 1600w",
+        "alt": "Look Danos da coleção CLAMA: silhueta em preto e branco",
+        "legenda": "Silhueta em preto e branco"
       }
     ],
     "pecas": [
@@ -73,22 +73,16 @@
     "cor": "#3b3835",
     "imagens": [
       {
-        "src": "images/looks/culpa-frente-costas.jpg",
-        "ajuste": "-2.4% 0",
-        "alt": "Terceiro vestido, Culpa: vista de frente",
-        "legenda": "Frente",
-        "enquadramento": "esquerda",
-        "largura": 742,
-        "altura": 780
+        "src": "images/clama/clama-25-1600.webp",
+        "srcset": "images/clama/clama-25-640.webp 640w, images/clama/clama-25-1600.webp 1600w",
+        "alt": "Look Culpa da coleção CLAMA: silhueta completa",
+        "legenda": "Silhueta completa"
       },
       {
-        "src": "images/looks/culpa-frente-costas.jpg",
-        "ajuste": "2.4% 0",
-        "alt": "Terceiro vestido, Culpa: vista de costas",
-        "legenda": "Costas",
-        "enquadramento": "direita",
-        "largura": 742,
-        "altura": 780
+        "src": "images/clama/clama-14-1600.webp",
+        "srcset": "images/clama/clama-14-640.webp 640w, images/clama/clama-14-1600.webp 1600w",
+        "alt": "Look Culpa da coleção CLAMA: composição editorial",
+        "legenda": "Composição editorial"
       }
     ],
     "pecas": [
@@ -112,16 +106,22 @@
     "cor": "#615448",
     "imagens": [
       {
-        "src": "images/looks/resistencia-frente.png",
-        "ajuste": "0 1%",
-        "alt": "Quarto vestido, Resistência: vista de frente com a saia completa",
-        "legenda": "Frente"
+        "src": "images/clama/clama-26-1600.webp",
+        "srcset": "images/clama/clama-26-640.webp 640w, images/clama/clama-26-1600.webp 1600w",
+        "alt": "Look Resistência da coleção CLAMA: movimento da saia",
+        "legenda": "Movimento da saia"
       },
       {
-        "src": "images/looks/resistencia-costas.png",
-        "ajuste": "0 1%",
-        "alt": "Quarto vestido, Resistência: vista de costas com a saia completa",
-        "legenda": "Costas"
+        "src": "images/clama/clama-9-1600.webp",
+        "srcset": "images/clama/clama-9-640.webp 640w, images/clama/clama-9-1600.webp 1600w",
+        "alt": "Look Resistência da coleção CLAMA: detalhes e manifesto",
+        "legenda": "Detalhes e manifesto"
+      },
+      {
+        "src": "images/clama/clama-28-1600.webp",
+        "srcset": "images/clama/clama-28-640.webp 640w, images/clama/clama-28-1600.webp 1600w",
+        "alt": "Look Resistência da coleção CLAMA: retrato em preto e branco",
+        "legenda": "Retrato em preto e branco"
       }
     ],
     "pecas": [
@@ -145,22 +145,22 @@
     "cor": "#c5b9ad",
     "imagens": [
       {
-        "src": "images/looks/heranca-frente-costas.jpg",
-        "ajuste": "1% 0",
-        "alt": "Quinto vestido, Herança: vista de frente",
-        "legenda": "Frente",
-        "enquadramento": "esquerda",
-        "largura": 1254,
-        "altura": 1254
+        "src": "images/clama/clama-23-1600.webp",
+        "srcset": "images/clama/clama-23-640.webp 640w, images/clama/clama-23-1600.webp 1600w",
+        "alt": "Look Herança da coleção CLAMA: rosas e silhueta",
+        "legenda": "Rosas e silhueta"
       },
       {
-        "src": "images/looks/heranca-frente-costas.jpg",
-        "ajuste": "-1% 0",
-        "alt": "Quinto vestido, Herança: vista de costas",
-        "legenda": "Costas",
-        "enquadramento": "direita",
-        "largura": 1254,
-        "altura": 1254
+        "src": "images/clama/clama-1-1600.webp",
+        "srcset": "images/clama/clama-1-640.webp 640w, images/clama/clama-1-1600.webp 1600w",
+        "alt": "Look Herança da coleção CLAMA: composição com capa",
+        "legenda": "Composição com capa"
+      },
+      {
+        "src": "images/clama/clama-5-1600.webp",
+        "srcset": "images/clama/clama-5-640.webp 640w, images/clama/clama-5-1600.webp 1600w",
+        "alt": "Look Herança da coleção CLAMA: retrato e memória",
+        "legenda": "Retrato e memória"
       }
     ],
     "pecas": [
@@ -180,16 +180,22 @@
     "cor": "#9b8976",
     "imagens": [
       {
-        "src": "images/looks/libertacao-frente.png",
-        "ajuste": "0 0",
-        "alt": "Sexto vestido, Libertação: vista de frente",
-        "legenda": "Frente"
+        "src": "images/clama/clama-7-1600.webp",
+        "srcset": "images/clama/clama-7-640.webp 640w, images/clama/clama-7-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: retrato e alfaiataria",
+        "legenda": "Retrato e alfaiataria"
       },
       {
-        "src": "images/looks/libertacao-costas.png",
-        "ajuste": "0 -1%",
-        "alt": "Sexto vestido, Libertação: vista de costas",
-        "legenda": "Costas"
+        "src": "images/clama/clama-8-1600.webp",
+        "srcset": "images/clama/clama-8-640.webp 640w, images/clama/clama-8-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: composição editorial",
+        "legenda": "Composição editorial"
+      },
+      {
+        "src": "images/clama/clama-16-1600.webp",
+        "srcset": "images/clama/clama-16-640.webp 640w, images/clama/clama-16-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: manifesto nas costas",
+        "legenda": "Manifesto nas costas"
       }
     ],
     "pecas": [
