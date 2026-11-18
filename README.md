@@ -115,7 +115,7 @@ As duas galerias também possuem setas de anterior/próxima sobre a imagem. Apar
 
 O segundo vestido é Danos (/colecao/danos); /colecao/ferida redireciona para ele. A imagem danos-frente-costas.jpg foi preservada sem edição: look-image.ts apresenta cada metade por um enquadramento SVG, sem esticar nem cortar a barra. Os campos largura, altura e enquadramento no catálogo informam as dimensões e a vista. A mesma renderização é usada na imagem principal e nas miniaturas.
 
-O terceiro vestido é Culpa (/colecao/culpa); /colecao/ruptura redireciona para ele. A imagem culpa-frente-costas.jpg é apresentada com enquadramentos independentes e recorte limitado, preservando o arquivo original. Usa a mesma galeria automática e os mesmos controles dos demais vestidos.
+O terceiro vestido é Culpa (/colecao/culpa); /colecao/ruptura redireciona para ele. Os novos croquis são apresentados em arquivos separados: culpa-frente-v2.png e culpa-costas-v2.png. O croqui anterior foi removido. Usa a mesma galeria automática e os mesmos controles dos demais vestidos.
 
 O quarto vestido é Resistência (/colecao/resistencia). O arquivo original resistencia-frente-costas.jpg foi preservado. As vistas de apresentação resistencia-frente.png e resistencia-costas.png exibem a saia completa, separadas por edição assistida. Detalhes em docs/RESISTENCIA-IMAGENS.md.
 

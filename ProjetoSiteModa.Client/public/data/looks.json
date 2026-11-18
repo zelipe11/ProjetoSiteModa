@@ -187,22 +187,14 @@
         "legenda": "Editorial · Costas"
       },
       {
-        "src": "images/looks/culpa-frente-costas.jpg",
-        "ajuste": "-2.4% 0",
-        "alt": "Croqui: Terceiro vestido, Culpa: vista de frente",
-        "legenda": "Croqui · Frente",
-        "enquadramento": "esquerda",
-        "largura": 742,
-        "altura": 780
+        "src": "images/looks/culpa-frente-v2.png",
+        "alt": "Croqui do look Culpa: vista de frente, corset com estampa de jornal, sobreposição em camadas e calça preta",
+        "legenda": "Croqui · Frente"
       },
       {
-        "src": "images/looks/culpa-frente-costas.jpg",
-        "ajuste": "2.4% 0",
-        "alt": "Croqui: Terceiro vestido, Culpa: vista de costas",
-        "legenda": "Croqui · Costas",
-        "enquadramento": "direita",
-        "largura": 742,
-        "altura": 780
+        "src": "images/looks/culpa-costas-v2.png",
+        "alt": "Croqui do look Culpa: vista de costas, corset com estampa de jornal, sobreposição em camadas e calça preta",
+        "legenda": "Croqui · Costas"
       }
     ],
     "pecas": [
