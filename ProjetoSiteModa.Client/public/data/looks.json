@@ -80,6 +80,24 @@
         "legenda": "Silhueta em preto e branco"
       },
       {
+        "src": "images/clama/danos-editorial-frente-1600.webp",
+        "srcset": "images/clama/danos-editorial-frente-640.webp 640w, images/clama/danos-editorial-frente-1600.webp 1600w",
+        "alt": "Look Danos da coleção CLAMA: vestido branco com aplicação de mão preta e faixas de renda, vista de frente",
+        "legenda": "Editorial · Frente"
+      },
+      {
+        "src": "images/clama/danos-editorial-detalhe-mao-1600.webp",
+        "srcset": "images/clama/danos-editorial-detalhe-mao-640.webp 640w, images/clama/danos-editorial-detalhe-mao-1600.webp 1600w",
+        "alt": "Look Danos da coleção CLAMA: detalhe da aplicação de mão em renda preta sobre o corpete branco",
+        "legenda": "Editorial · Detalhe da mão"
+      },
+      {
+        "src": "images/clama/danos-editorial-detalhe-renda-1600.webp",
+        "srcset": "images/clama/danos-editorial-detalhe-renda-640.webp 640w, images/clama/danos-editorial-detalhe-renda-1600.webp 1600w",
+        "alt": "Look Danos da coleção CLAMA: detalhe das faixas de renda preta amarradas na cintura",
+        "legenda": "Editorial · Detalhe da renda"
+      },
+      {
         "src": "images/looks/danos-frente-costas.jpg",
         "ajuste": "-4% 0",
         "alt": "Croqui: Segundo vestido, Danos: vista de frente",
