@@ -313,6 +313,11 @@ footer small{padding-top:16px}
 .gallery-arrow,.compact .gallery-arrow,.gallery-arrow:hover,.compact .gallery-arrow:hover{background:transparent;border:0;box-shadow:none;color:white;filter:drop-shadow(0 1px 2px #000b)}
 .gallery-stage:has(.gallery-slide.is-active.is-sketch) .gallery-arrow{color:var(--ink);filter:none}
 
+.look-page .look-gallery{position:relative}
+.look-page .gallery-thumbnails{position:absolute;inset:0 0 0 auto;width:58px;overflow-y:auto;scrollbar-width:thin;overscroll-behavior:contain}
+.look-page .gallery-thumb{width:100%;flex-shrink:0}
+@media(max-width:650px){.look-page .gallery-thumbnails{width:48px}}
+
 /* Navegação com submenus de páginas e seções. */
 .nav-item{position:relative;min-width:0}
 .nav-item-heading{display:flex;align-items:center;gap:3px}

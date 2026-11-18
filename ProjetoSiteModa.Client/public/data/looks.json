@@ -27,6 +27,18 @@
         "legenda": "Movimento da saia"
       },
       {
+        "src": "images/clama/dor-editorial-frente-1600.webp",
+        "srcset": "images/clama/dor-editorial-frente-640.webp 640w, images/clama/dor-editorial-frente-1600.webp 1600w",
+        "alt": "Look Dor da coleção CLAMA: vestido cinza com marcas de mãos e rosas vermelhas, vista de frente",
+        "legenda": "Editorial · Frente"
+      },
+      {
+        "src": "images/clama/dor-editorial-perfil-1600.webp",
+        "srcset": "images/clama/dor-editorial-perfil-640.webp 640w, images/clama/dor-editorial-perfil-1600.webp 1600w",
+        "alt": "Look Dor da coleção CLAMA: vestido cinza com marcas de mãos e rosas vermelhas, vista de perfil",
+        "legenda": "Editorial · Perfil"
+      },
+      {
         "src": "images/looks/dor-frente.png",
         "ajuste": "0 3.5%",
         "alt": "Croqui: Vestido Dor, vista de frente, isolada em fundo branco",
@@ -190,6 +202,18 @@
         "legenda": "Retrato em preto e branco"
       },
       {
+        "src": "images/clama/resistencia-editorial-frente-1600.webp",
+        "srcset": "images/clama/resistencia-editorial-frente-640.webp 640w, images/clama/resistencia-editorial-frente-1600.webp 1600w",
+        "alt": "Look Resistência da coleção CLAMA: corpete com estampa de jornal, correntes e saia preta com frases, vista de frente",
+        "legenda": "Editorial · Frente"
+      },
+      {
+        "src": "images/clama/resistencia-editorial-costas-1600.webp",
+        "srcset": "images/clama/resistencia-editorial-costas-640.webp 640w, images/clama/resistencia-editorial-costas-1600.webp 1600w",
+        "alt": "Look Resistência da coleção CLAMA: corpete com estampa de jornal, correntes e saia preta com frases, vista de costas",
+        "legenda": "Editorial · Costas"
+      },
+      {
         "src": "images/looks/resistencia-frente.png",
         "ajuste": "0 1%",
         "alt": "Croqui: Quarto vestido, Resistência: vista de frente com a saia completa",
@@ -304,6 +328,36 @@
         "srcset": "images/clama/clama-7-640.webp 640w, images/clama/clama-7-1600.webp 1600w",
         "alt": "Look Libertação da coleção CLAMA: costas do casaco com retrato feminino",
         "legenda": "Costas do casaco"
+      },
+      {
+        "src": "images/clama/libertacao-editorial-vestido-frente-1024.webp",
+        "srcset": "images/clama/libertacao-editorial-vestido-frente-640.webp 640w, images/clama/libertacao-editorial-vestido-frente-1024.webp 1024w",
+        "alt": "Look Libertação da coleção CLAMA: vestido de frente, com rosas no corpete",
+        "legenda": "Editorial · Vestido de frente"
+      },
+      {
+        "src": "images/clama/libertacao-editorial-com-casaco-1600.webp",
+        "srcset": "images/clama/libertacao-editorial-com-casaco-640.webp 640w, images/clama/libertacao-editorial-com-casaco-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: vestido com o casaco preto de frente",
+        "legenda": "Editorial · Com casaco"
+      },
+      {
+        "src": "images/clama/libertacao-editorial-vestido-perfil-1600.webp",
+        "srcset": "images/clama/libertacao-editorial-vestido-perfil-640.webp 640w, images/clama/libertacao-editorial-vestido-perfil-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: vestido visto de perfil",
+        "legenda": "Editorial · Vestido de perfil"
+      },
+      {
+        "src": "images/clama/libertacao-editorial-casaco-perfil-1600.webp",
+        "srcset": "images/clama/libertacao-editorial-casaco-perfil-640.webp 640w, images/clama/libertacao-editorial-casaco-perfil-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: casaco preto visto de perfil, com o retrato feminino",
+        "legenda": "Editorial · Casaco de perfil"
+      },
+      {
+        "src": "images/clama/libertacao-editorial-vestido-costas-1600.webp",
+        "srcset": "images/clama/libertacao-editorial-vestido-costas-640.webp 640w, images/clama/libertacao-editorial-vestido-costas-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: vestido visto de costas",
+        "legenda": "Editorial · Vestido de costas"
       },
       {
         "src": "images/looks/libertacao-frente.png",
