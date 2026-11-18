@@ -39,6 +39,30 @@
         "legenda": "Editorial · Perfil"
       },
       {
+        "src": "images/clama/dor-detalhe-amarracao-1024.webp",
+        "srcset": "images/clama/dor-detalhe-amarracao-640.webp 640w, images/clama/dor-detalhe-amarracao-1024.webp 1024w",
+        "alt": "Look Dor da coleção CLAMA: detalhe da amarração nas costas do corpete cinza",
+        "legenda": "Detalhe · Amarração do corpete"
+      },
+      {
+        "src": "images/clama/dor-detalhe-cristais-1600.webp",
+        "srcset": "images/clama/dor-detalhe-cristais-640.webp 640w, images/clama/dor-detalhe-cristais-1600.webp 1600w",
+        "alt": "Look Dor da coleção CLAMA: detalhe dos cristais em forma de gota e das rosas na saia",
+        "legenda": "Detalhe · Cristais e rosas"
+      },
+      {
+        "src": "images/clama/dor-detalhe-venda-1600.webp",
+        "srcset": "images/clama/dor-detalhe-venda-640.webp 640w, images/clama/dor-detalhe-venda-1600.webp 1600w",
+        "alt": "Look Dor da coleção CLAMA: detalhe da venda de renda vermelha",
+        "legenda": "Detalhe · Venda de renda"
+      },
+      {
+        "src": "images/clama/dor-detalhe-rosa-1600.webp",
+        "srcset": "images/clama/dor-detalhe-rosa-640.webp 640w, images/clama/dor-detalhe-rosa-1600.webp 1600w",
+        "alt": "Look Dor da coleção CLAMA: detalhe da rosa vermelha sobre o tecido cinza com marcas de mãos",
+        "legenda": "Detalhe · Rosa vermelha"
+      },
+      {
         "src": "images/looks/dor-frente.png",
         "ajuste": "0 3.5%",
         "alt": "Croqui: Vestido Dor, vista de frente, isolada em fundo branco",
