@@ -402,6 +402,24 @@
         "legenda": "Editorial · Vestido de costas"
       },
       {
+        "src": "images/clama/libertacao-detalhe-retrato-1600.webp",
+        "srcset": "images/clama/libertacao-detalhe-retrato-640.webp 640w, images/clama/libertacao-detalhe-retrato-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: detalhe do retrato feminino estampado no casaco preto",
+        "legenda": "Detalhe · Retrato no casaco"
+      },
+      {
+        "src": "images/clama/libertacao-detalhe-casaco-costas-1600.webp",
+        "srcset": "images/clama/libertacao-detalhe-casaco-costas-640.webp 640w, images/clama/libertacao-detalhe-casaco-costas-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: vista de costas do casaco preto com retrato feminino",
+        "legenda": "Detalhe · Costas do casaco"
+      },
+      {
+        "src": "images/clama/libertacao-detalhe-rosas-1600.webp",
+        "srcset": "images/clama/libertacao-detalhe-rosas-640.webp 640w, images/clama/libertacao-detalhe-rosas-1600.webp 1600w",
+        "alt": "Look Libertação da coleção CLAMA: detalhe das rosas de tecido e do zíper no corpete vinho",
+        "legenda": "Detalhe · Rosas do corpete"
+      },
+      {
         "src": "images/looks/libertacao-frente.png",
         "ajuste": "0 0",
         "alt": "Croqui: Sexto vestido, Libertação: vista de frente",
