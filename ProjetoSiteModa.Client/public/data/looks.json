@@ -218,9 +218,9 @@
     "cor": "#615448",
     "imagens": [
       {
-        "src": "images/clama/clama-26-1600.webp",
-        "srcset": "images/clama/clama-26-640.webp 640w, images/clama/clama-26-1600.webp 1600w",
-        "alt": "Look Resistência da coleção CLAMA: movimento da saia",
+        "src": "images/clama/resistencia-muro-atualizada-853.webp",
+        "srcset": "images/clama/resistencia-muro-atualizada-640.webp 640w, images/clama/resistencia-muro-atualizada-853.webp 853w",
+        "alt": "Look Resistência da coleção CLAMA: modelo junto ao muro de pedra com a saia em movimento",
         "legenda": "Movimento da saia"
       },
       {
