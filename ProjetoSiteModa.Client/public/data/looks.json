@@ -436,15 +436,13 @@
         "legenda": "Detalhe · Rosas do corpete"
       },
       {
-        "src": "images/looks/libertacao-frente.png",
-        "ajuste": "0 0",
-        "alt": "Croqui: Sexto vestido, Libertação: vista de frente",
+        "src": "images/looks/libertacao-frente-v2.png",
+        "alt": "Croqui do look Libertação: vista de frente, casaco preto aberto sobre conjunto vermelho com flores",
         "legenda": "Croqui · Frente"
       },
       {
-        "src": "images/looks/libertacao-costas.png",
-        "ajuste": "0 -1%",
-        "alt": "Croqui: Sexto vestido, Libertação: vista de costas",
+        "src": "images/looks/libertacao-costas-v2.png",
+        "alt": "Croqui do look Libertação: vista de costas, casaco preto longo com retrato feminino",
         "legenda": "Croqui · Costas"
       }
     ],

@@ -121,7 +121,7 @@ O quarto vestido é Resistência (/colecao/resistencia). O arquivo original resi
 
 O quinto vestido é Herança (/colecao/heranca); /colecao/florescer redireciona para ele. A imagem heranca-frente-costas.jpg preserva as cores e o desenho fornecidos, com frente e costas na galeria compartilhada.
 
-O sexto vestido é Libertação (/colecao/libertacao); /colecao/voz redireciona para ele. As vistas de apresentação libertacao-frente.png e libertacao-costas.png foram separadas com edição assistida para preservar o casaco completo. A prancha original está em libertacao-frente-costas.jpg. Veja docs/LIBERTACAO-IMAGENS.md.
+O sexto vestido é Libertação (/colecao/libertacao); /colecao/voz redireciona para ele. Os novos croquis libertacao-frente-v2.png e libertacao-costas-v2.png apresentam frente e costas em arquivos separados. Os croquis anteriores foram removidos. Veja docs/LIBERTACAO-IMAGENS.md.
 
 ## Mensagens privadas
 
