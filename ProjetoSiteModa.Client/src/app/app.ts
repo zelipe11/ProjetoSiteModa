@@ -17,7 +17,7 @@ interface NavItem {
 <button id="menu-toggle" class="menu-toggle" type="button" (click)="menu.set(!menu()); submenu.set(null)" [attr.aria-expanded]="menu()" [attr.aria-label]="menu() ? 'Fechar menu' : 'Abrir menu'" aria-controls="navegacao"><span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span></button>
 <nav id="navegacao" [class.aberto]="menu()" aria-label="Navegação principal" (keydown.escape)="fecharComEscape($event)">
 @for(item of links; track item.id){
- <div class="nav-item" (focusout)="sairDoItem($event,item.id)">
+ <div class="nav-item" (pointerenter)="abrirComMouse($event,item)" (pointerleave)="sairComMouse($event,item.id)" (focusout)="sairDoItem($event,item.id)">
   <div class="nav-item-heading">
    <a [routerLink]="['/',item.id]" routerLinkActive="active" ariaCurrentWhenActive="page" (click)="fecharMenus()">{{item.nome}}</a>
    @if(item.filhos?.length){<button type="button" class="submenu-toggle" [id]="'submenu-toggle-' + item.id" [attr.aria-label]="(submenu() === item.id ? 'Fechar submenu de ' : 'Abrir submenu de ') + item.nome" [attr.aria-expanded]="submenu() === item.id" [attr.aria-controls]="'submenu-' + item.id" (click)="submenu.set(submenu() === item.id ? null : item.id)"><svg viewBox="0 0 12 8" aria-hidden="true" focusable="false"><path d="m1 1 5 5 5-5" /></svg></button>}
@@ -60,6 +60,11 @@ export class App {
  }
  readonly menu = signal(false);
  readonly submenu = signal<string | null>(null);
+ private usaMouse(event:PointerEvent){return event.pointerType === 'mouse' && (this.document.defaultView?.matchMedia('(min-width: 1281px) and (hover: hover)').matches ?? false);}
+ abrirComMouse(event:PointerEvent,item:NavItem){if(this.usaMouse(event)) this.submenu.set(item.filhos?.length ? item.id : null);}
+ sairComMouse(event:PointerEvent,id:string){
+  if(this.usaMouse(event) && this.submenu() === id && !(event.currentTarget as HTMLElement).contains(this.document.activeElement)) this.submenu.set(null);
+ }
  fecharMenus(){this.menu.set(false);this.submenu.set(null);}
  fecharFora(event:MouseEvent){if(event.target instanceof Element && !event.target.closest('header')) this.fecharMenus();}
  sairDoItem(event:FocusEvent,id:string){if(this.submenu() === id && !(event.currentTarget as HTMLElement).contains(event.relatedTarget as Node | null)) this.submenu.set(null);}
