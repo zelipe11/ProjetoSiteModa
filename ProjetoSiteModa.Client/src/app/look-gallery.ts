@@ -8,7 +8,7 @@ import { Look } from './look';
 <div class="look-gallery" [class.compact]="linkDetalhes" role="region" aria-roledescription="carrossel" [attr.aria-label]="'Imagens de ' + look.nome" (mouseenter)="hovered = true" (mouseleave)="hovered = false" (focusin)="focused = true" (focusout)="sairDoFoco($event)">
   <div class="gallery-stage">
     @for (image of look.imagens; track image.legenda; let i = $index) {
-      <div class="gallery-slide" [id]="panelId(i)" [class.is-active]="indice() === i" [style.background-color]="image.src.startsWith('images/looks/') ? '#fff' : null" [attr.aria-hidden]="indice() !== i ? true : null" [attr.role]="linkDetalhes ? 'group' : 'tabpanel'" [attr.aria-label]="linkDetalhes ? image.legenda : null" [attr.aria-labelledby]="linkDetalhes ? null : tabId(i)">
+      <div class="gallery-slide" [id]="panelId(i)" [class.is-active]="indice() === i" [class.is-sketch]="image.src.startsWith('images/looks/')" [style.background-color]="image.src.startsWith('images/looks/') ? '#fff' : null" [attr.aria-hidden]="indice() !== i ? true : null" [attr.role]="linkDetalhes ? 'group' : 'tabpanel'" [attr.aria-label]="linkDetalhes ? image.legenda : null" [attr.aria-labelledby]="linkDetalhes ? null : tabId(i)">
         <div class="gallery-view"><clama-look-image [image]="image" /></div>
       </div>
     }

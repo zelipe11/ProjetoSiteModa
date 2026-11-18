@@ -304,7 +304,11 @@ footer small{padding-top:16px}
 .gallery-thumb:has(img[src*="images/clama/"]){padding:0;border-radius:2px}
 .gallery-thumb img[src*="images/clama/"]{object-fit:cover}
 @media(min-width:801px){.look-page .detail-product{grid-template-columns:clamp(280px,calc(66svh - 165px),480px) minmax(260px,380px)}}
-@media(max-width:750px){.hero-photograph img{object-fit:contain;object-position:center top}.hero-story{min-height:max(650px,calc(100svh - 90px));padding:25px 6%}.hero-editorial .hero-meta{font-size:7px;letter-spacing:1px}.hero-editorial .hero-center{padding:50px 0}.hero-editorial h1{width:100%;max-width:480px;margin:24px auto}.hero-editorial .hero-phrase{font-size:clamp(30px,8vw,42px)}.hero-editorial .hero-intro{font-size:14px;max-width:32ch;margin-top:20px}.hero-editorial .hero-bottom{font-size:10px}.home-references h2{margin-bottom:28px}.home-references .section-top>span{max-width:140px}}
+@media(max-width:750px){.hero-photograph img{object-fit:cover;object-position:center top}.hero-story{min-height:max(650px,calc(100svh - 90px));padding:25px 6%}.hero-editorial .hero-meta{font-size:7px;letter-spacing:1px}.hero-editorial .hero-center{padding:50px 0}.hero-editorial h1{width:100%;max-width:480px;margin:24px auto}.hero-editorial .hero-phrase{font-size:clamp(30px,8vw,42px)}.hero-editorial .hero-intro{font-size:14px;max-width:32ch;margin-top:20px}.hero-editorial .hero-bottom{font-size:10px}.home-references h2{margin-bottom:28px}.home-references .section-top>span{max-width:140px}}
 @media(max-width:650px){.home-looks-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 14px}.home-look-heading{margin-top:12px}.home-look-heading h3{font-size:27px}.home-look-copy>p{font-size:10px;line-height:1.6}.home-collection{padding-bottom:50px}.home-collection>.outline-link{width:100%;gap:16px;font-size:9px}.hero-photograph figcaption>span{font-size:7px;letter-spacing:1px}}
 
 @media(max-width:768px),(hover:none),(pointer:coarse){.home-collection .gallery-arrow{display:grid;opacity:1;pointer-events:auto;width:30px;height:44px}}
+
+/* Setas sem placas: contraste claro nas fotos e escuro nos croquis. */
+.gallery-arrow,.compact .gallery-arrow,.gallery-arrow:hover,.compact .gallery-arrow:hover{background:transparent;border:0;box-shadow:none;color:white;filter:drop-shadow(0 1px 2px #000b)}
+.gallery-stage:has(.gallery-slide.is-active.is-sketch) .gallery-arrow{color:var(--ink);filter:none}
