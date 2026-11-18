@@ -2,8 +2,8 @@
  <p class="eyebrow">06 / SUA VOZ TAMBÉM IMPORTA</p>
  <h1 class="page-title">Há força no que<br><em>temos a dizer.</em></h1>
  <p class="voices-intro">Palavras para ocupar espaço. Estas são mensagens da CLAMA, abertas a quem encontra nelas um eco.</p>
- <div class="quotes">@for(frase of frases;track frase){<blockquote>“{{frase}}”<cite>CLAMA</cite></blockquote>}</div>
- <div class="writing">
+ <div id="mensagens-clama" class="quotes">@for(frase of frases;track frase){<blockquote>“{{frase}}”<cite>CLAMA</cite></blockquote>}</div>
+ <div id="compartilhar" class="writing">
   <div><h3>Um espaço para a sua voz.</h3><p>Se quiser, compartilhe uma mensagem com a equipe CLAMA. O texto será guardado em um espaço privado, acessível à equipe responsável pelo projeto.</p><p class="voice-privacy">Sua mensagem não será publicada no site. Não pedimos nome nem contato. Evite incluir informações que identifiquem você ou outras pessoas.</p></div>
   <form (submit)="enviar($event)" [attr.aria-busy]="enviando()">
    <label for="voz">O que sua voz quer dizer hoje?</label>
