@@ -17,10 +17,12 @@
  <div class="section-heading"><h2 id="home-collection-title">Histórias vestidas<br><em>de significado.</em></h2><p>Da dor à libertação, cada criação carrega uma mensagem. Conheça as peças pelo olhar do nosso editorial.</p></div>
  <div class="home-looks-grid">
  @for (look of looks(); track look.id) {
-  <a class="home-look" [routerLink]="['/colecao', look.slug]">
-   <figure><img [src]="look.imagens?.[0]?.src" [attr.srcset]="look.imagens?.[0]?.srcset" sizes="(max-width: 650px) 44vw, 30vw" [alt]="look.imagens?.[0]?.alt" width="1600" height="2400" loading="lazy" decoding="async"><span class="home-look-index">0{{look.id}} / 06</span></figure>
+  <article class="home-look">
+   <clama-look-gallery [look]="look" [linkDetalhes]="true" />
+   <a class="home-look-copy" [routerLink]="['/colecao', look.slug]">
    <div class="home-look-heading"><h3>{{look.nome}}</h3><svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 13 13 3M3 3h10v10" /></svg></div><p>{{look.frase}}</p>
-  </a>
+   </a>
+  </article>
  }
  </div>
  <a class="outline-link dark" routerLink="/colecao">CONHEÇA TODAS AS PEÇAS <svg class="link-arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h12M9 3l5 5-5 5" /></svg></a>
