@@ -319,6 +319,30 @@
         "legenda": "Editorial · Capa aberta"
       },
       {
+        "src": "images/clama/heranca-vestido-frente-corrigida-1024.webp",
+        "srcset": "images/clama/heranca-vestido-frente-corrigida-640.webp 640w, images/clama/heranca-vestido-frente-corrigida-1024.webp 1024w",
+        "alt": "Look Herança da coleção CLAMA: vestido preto visto de frente, com o texto corrigido",
+        "legenda": "Editorial · Vestido de frente"
+      },
+      {
+        "src": "images/clama/heranca-vestido-texto-corrigido-1024.webp",
+        "srcset": "images/clama/heranca-vestido-texto-corrigido-640.webp 640w, images/clama/heranca-vestido-texto-corrigido-1024.webp 1024w",
+        "alt": "Look Herança da coleção CLAMA: detalhe do texto pintado no vestido, com a grafia ASSASSINATO corrigida",
+        "legenda": "Detalhe · Texto do vestido"
+      },
+      {
+        "src": "images/clama/heranca-vestido-costas-1600.webp",
+        "srcset": "images/clama/heranca-vestido-costas-640.webp 640w, images/clama/heranca-vestido-costas-1600.webp 1600w",
+        "alt": "Look Herança da coleção CLAMA: vestido preto visto de costas",
+        "legenda": "Editorial · Vestido de costas"
+      },
+      {
+        "src": "images/clama/heranca-vestido-perfil-1600.webp",
+        "srcset": "images/clama/heranca-vestido-perfil-640.webp 640w, images/clama/heranca-vestido-perfil-1600.webp 1600w",
+        "alt": "Look Herança da coleção CLAMA: vestido preto visto de perfil",
+        "legenda": "Editorial · Vestido de perfil"
+      },
+      {
         "src": "images/looks/heranca-frente-costas.jpg",
         "ajuste": "1% 0",
         "alt": "Croqui: Quinto vestido, Herança: vista de frente",
