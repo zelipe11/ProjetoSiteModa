@@ -115,6 +115,24 @@
         "legenda": "Composição editorial"
       },
       {
+        "src": "images/clama/culpa-editorial-frente-1600.webp",
+        "srcset": "images/clama/culpa-editorial-frente-640.webp 640w, images/clama/culpa-editorial-frente-1600.webp 1600w",
+        "alt": "Look Culpa da coleção CLAMA: vista de frente com corset estampado e calça preta no editorial da estação",
+        "legenda": "Editorial · Frente"
+      },
+      {
+        "src": "images/clama/culpa-editorial-perfil-1600.webp",
+        "srcset": "images/clama/culpa-editorial-perfil-640.webp 640w, images/clama/culpa-editorial-perfil-1600.webp 1600w",
+        "alt": "Look Culpa da coleção CLAMA: vista de perfil com corset estampado e calça preta no editorial da estação",
+        "legenda": "Editorial · Perfil"
+      },
+      {
+        "src": "images/clama/culpa-editorial-costas-1600.webp",
+        "srcset": "images/clama/culpa-editorial-costas-640.webp 640w, images/clama/culpa-editorial-costas-1600.webp 1600w",
+        "alt": "Look Culpa da coleção CLAMA: vista de costas com corset estampado e calça preta no editorial da estação",
+        "legenda": "Editorial · Costas"
+      },
+      {
         "src": "images/looks/culpa-frente-costas.jpg",
         "ajuste": "-2.4% 0",
         "alt": "Croqui: Terceiro vestido, Culpa: vista de frente",
